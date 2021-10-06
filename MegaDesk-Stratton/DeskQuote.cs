@@ -52,7 +52,7 @@ namespace MegaDesk_Stratton
 
         public int GetQuote() { return quote; }
         public void setQuote() { quote = AreaTotalCost() + CalcDrawerCost() + CalcRushCost() + CalcSurfaceCost();
-            //GetRushOrder();
+            GetRushOrder();
         }
         /// <summary>
         /// w*d of Desk, and calculates cost
@@ -156,11 +156,19 @@ namespace MegaDesk_Stratton
         {
             try
             {
-                string[] rushPrices = File.ReadAllLines("Resources\\rushOrderPrices.txt");
-                foreach(string item in rushPrices)
+                string[] vs = File.ReadAllLines("Resources\\rushOrderPrices.txt");
+                int[] rushPrices = Array.ConvertAll(vs, item => int.Parse(item));
+                rushShipping = new int[3, 3];
+                int index = 0;
+                for (int i = 0; i < 3; i++)
                 {
-                    Console.WriteLine(item);
+                    for (int j = 0; j < 3; j++)
+                    {
+                        rushShipping[i, j] = rushPrices[index];
+                        index++;
+                    }
                 }
+
             }
             catch (Exception e)
             {
