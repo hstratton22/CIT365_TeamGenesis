@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ namespace MegaDesk_Stratton
     {
         private string custName;
         private int rush;
+        private int[,] rushShipping;
         private int quote;
         private const int BaseCost = 200;
         private const int PerDrawer = 50;
@@ -147,8 +149,22 @@ namespace MegaDesk_Stratton
                "name:" + GetCustName();
         }
 
+        public int GetRushOrder()
+        {
+            try
+            {
+                string[] rushPrices = File.ReadAllLines("MegaDesk_Stratton.Properties.Resources.rushOrderPrices.txt");
+            }
+            catch
+            {
+                //change catch to something more appropriate
+                Console.WriteLine("File Failed to Open");
+            }
 
-
-
+            int temp = 0;
+            return temp;
+        }
     }
+
+    
 }

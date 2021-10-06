@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace MegaDesk_Stratton
 {/// <summary>
@@ -18,10 +19,7 @@ namespace MegaDesk_Stratton
         
         private DeskQuote _newQuote;
         private Desk _newDesk;
-
-
-
-
+        
 
         public AddQuote(Desk d, DeskQuote q)
         {
