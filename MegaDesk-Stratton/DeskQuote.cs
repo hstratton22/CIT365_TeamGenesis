@@ -52,7 +52,7 @@ namespace MegaDesk_Stratton
 
         public int GetQuote() { return quote; }
         public void setQuote() { quote = AreaTotalCost() + CalcDrawerCost() + CalcRushCost() + CalcSurfaceCost();
-            GetRushOrder();
+         
         }
         /// <summary>
         /// w*d of Desk, and calculates cost
@@ -80,21 +80,22 @@ namespace MegaDesk_Stratton
         /// <returns></returns>
         public int CalcRushCost() { 
             int result = 0;
+            GetRushOrder();
             switch(rush)
             { case 3:
-                    if (Desk.GetArea() < OversizeLowNum) result = 60;
-                    else if (Desk.GetArea() > OversizeLowNum && Desk.GetArea() < OversizeHighNum) result = 70;
-                    else result = 80;
+                    if (Desk.GetArea() < OversizeLowNum) result = rushShipping[0,0];
+                    else if (Desk.GetArea() > OversizeLowNum && Desk.GetArea() < OversizeHighNum) result = rushShipping[0, 1];
+                    else result = rushShipping[0, 2];
                     break;
                 case 5:
-                    if (Desk.GetArea() < OversizeLowNum) result = 40;
-                    else if (Desk.GetArea() > OversizeLowNum && Desk.GetArea() < OversizeHighNum) result = 50;
-                    else result = 60;
+                    if (Desk.GetArea() < OversizeLowNum) result = rushShipping[1, 0];
+                    else if (Desk.GetArea() > OversizeLowNum && Desk.GetArea() < OversizeHighNum) result = rushShipping[1, 1];
+                    else result = rushShipping[1, 2];
                     break;
                 case 7:
-                    if (Desk.GetArea() < OversizeLowNum) result = 30;
-                    else if (Desk.GetArea() > OversizeLowNum && Desk.GetArea() < OversizeHighNum) result = 35;
-                    else result =40;
+                    if (Desk.GetArea() < OversizeLowNum) result = rushShipping[2, 0];
+                    else if (Desk.GetArea() > OversizeLowNum && Desk.GetArea() < OversizeHighNum) result = rushShipping[2, 1];
+                    else result = rushShipping[2, 2];
                     break;
                  default: 
                     result = 0;
@@ -152,7 +153,7 @@ namespace MegaDesk_Stratton
                "name:" + GetCustName();
         }
 
-        public int GetRushOrder()
+        public int[,] GetRushOrder()
         {
             try
             {
@@ -173,11 +174,10 @@ namespace MegaDesk_Stratton
             catch (Exception e)
             {
                 //change catch to something more appropriate
-                MessageBox.Show("File Could Not be Found");
+                MessageBox.Show("File Could Not be Found" + e);
             }
 
-            int temp = 0;
-            return temp;
+            return rushShipping;
         }
     }
 
