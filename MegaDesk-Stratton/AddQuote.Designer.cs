@@ -154,6 +154,7 @@ namespace MegaDesk_Stratton
             // 
             // desktopMatComboBox
             // 
+            this.desktopMatComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.desktopMatComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.desktopMatComboBox.FormattingEnabled = true;
             this.desktopMatComboBox.ItemHeight = 20;
@@ -167,7 +168,6 @@ namespace MegaDesk_Stratton
             this.desktopMatComboBox.Name = "desktopMatComboBox";
             this.desktopMatComboBox.Size = new System.Drawing.Size(150, 28);
             this.desktopMatComboBox.TabIndex = 5;
-            this.desktopMatComboBox.Text = " ";
             this.desktopMatComboBox.SelectionChangeCommitted += new System.EventHandler(this.desktopMatComboBox_SelectionChangeCommitted);
             // 
             // rushLbl
@@ -181,6 +181,7 @@ namespace MegaDesk_Stratton
             // 
             // rushComboBox
             // 
+            this.rushComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.rushComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rushComboBox.FormattingEnabled = true;
             this.rushComboBox.Items.AddRange(new object[] {
