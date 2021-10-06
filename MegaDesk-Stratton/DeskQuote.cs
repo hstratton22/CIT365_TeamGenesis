@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -50,7 +51,9 @@ namespace MegaDesk_Stratton
         public Desk GetDesk() { return Desk; }
 
         public int GetQuote() { return quote; }
-        public void setQuote() { quote = AreaTotalCost() + CalcDrawerCost() + CalcRushCost() + CalcSurfaceCost(); }
+        public void setQuote() { quote = AreaTotalCost() + CalcDrawerCost() + CalcRushCost() + CalcSurfaceCost();
+            //GetRushOrder();
+        }
         /// <summary>
         /// w*d of Desk, and calculates cost
         /// </summary>
@@ -153,12 +156,16 @@ namespace MegaDesk_Stratton
         {
             try
             {
-                string[] rushPrices = File.ReadAllLines("MegaDesk_Stratton.Properties.Resources.rushOrderPrices.txt");
+                string[] rushPrices = File.ReadAllLines("Resources\\rushOrderPrices.txt");
+                foreach(string item in rushPrices)
+                {
+                    Console.WriteLine(item);
+                }
             }
-            catch
+            catch (Exception e)
             {
                 //change catch to something more appropriate
-                Console.WriteLine("File Failed to Open");
+                MessageBox.Show("File Could Not be Found");
             }
 
             int temp = 0;
