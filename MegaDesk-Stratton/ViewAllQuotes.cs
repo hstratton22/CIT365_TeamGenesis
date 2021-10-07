@@ -28,7 +28,7 @@ namespace MegaDesk_Stratton
             viewMainMenu.Show();
             this.Close();
         }
-
+        /*
         private static void ReadFromJsonFile()
         {
             if (File.Exists(JsonAllQuotesFile))
@@ -51,10 +51,10 @@ namespace MegaDesk_Stratton
                 Console.WriteLine(@"Error: Could not find JSON File.");
             }
         }
-
+        */
         private void ViewAllQuotes_Load(object sender, EventArgs e)
         {
-            ReadFromJsonFile();
+            Program.ReadFromJsonFile();
             ListQuotes();
 
         }
@@ -62,7 +62,7 @@ namespace MegaDesk_Stratton
         {
             foreach (DeskQuote deskQuote in Program._globals.AllQuotes)
             {
-               // MessageBox.Show($@"- {deskQuote.CustomerName}, $ {deskQuote.Cost}");
+                MessageBox.Show($@"- {deskQuote.CustomerName}, $ {deskQuote.Cost}");
             }
         }
     }
