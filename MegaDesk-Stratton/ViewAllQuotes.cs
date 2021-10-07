@@ -14,13 +14,12 @@ namespace MegaDesk_Stratton
 {
     public partial class ViewAllQuotes : Form
     {
-        private static Globals _globals;
+        
         private const string JsonAllQuotesFile = @"Data\quotes.json";
 
-        public ViewAllQuotes(Globals globals)
+        public ViewAllQuotes()
         {
-            _globals = globals;
-            InitializeComponent();
+           InitializeComponent();
         }
 
         private void allQuotesClose_Click(object sender, EventArgs e)
@@ -39,7 +38,7 @@ namespace MegaDesk_Stratton
                     var jsonData = File.ReadAllText(JsonAllQuotesFile);
                     if (jsonData.Length > 0)
                     {
-                        _globals.AllQuotes = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
+                        Program._globals.AllQuotes = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
                     }
                 }
                 catch (Exception ex)
@@ -49,7 +48,7 @@ namespace MegaDesk_Stratton
             }
             else
             {
-                Console.WriteLine("Error: Could not find JSON File.");
+                Console.WriteLine(@"Error: Could not find JSON File.");
             }
         }
 
@@ -61,9 +60,9 @@ namespace MegaDesk_Stratton
         }
         private void ListQuotes()
         {
-            foreach (DeskQuote deskQuote in _globals.AllQuotes)
+            foreach (DeskQuote deskQuote in Program._globals.AllQuotes)
             {
-                MessageBox.Show($"- {deskQuote.GetCustName()}, $ {deskQuote.GetQuote()}");
+               // MessageBox.Show($@"- {deskQuote.CustomerName}, $ {deskQuote.Cost}");
             }
         }
     }

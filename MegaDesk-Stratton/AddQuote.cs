@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -11,89 +12,30 @@ using System.Windows.Forms;
 using Newtonsoft.Json;
 
 namespace MegaDesk_Stratton
-{/// <summary>
-/// AddQuote Form including constructors and methods
-/// collect and submit input for new DeskQuote
-/// </summary>
+{
+    /// <summary>
+    /// AddQuote Form including constructors and methods
+    /// collect and submit input for new DeskQuote
+    /// </summary>
     public partial class AddQuote : Form
     {
         
-        private DeskQuote _newQuote;
-        private Desk _newDesk;
-        private static Globals _globals;
+        private readonly DeskQuote _newQuote = new DeskQuote();
+        private readonly Desk _newDesk = new Desk();
+        //private static Globals _globals;
         private const string JsonAllQuotesFile = @"Data\quotes.json";
 
 
-        public AddQuote(Desk d, DeskQuote q, Globals globals)
+        public AddQuote()//Desk d, DeskQuote q, Globals globals)
         {
-            _newDesk = d;
-            _newQuote = q;
-            _globals = globals;
-            
+                                  
             InitializeComponent();
-        }/// <summary>
+        }
+        
+        /// <summary>
         /// sets values to _newDesk and _newQuote from user input
         /// </summary>
-        public void createDeskQuote()
-        {
-            //date
-            _newQuote.SetDate(DateTime.Now);
-            dateLbl.Text = DateTime.Now.ToString("dd MMMM yyyy");
-            
-            _newQuote.SetCustName(custNameInput.Text);
-            _newDesk.SetWidth(int.Parse(deskWidthInput.Text));
-            _newDesk.SetDepth(int.Parse(deskDepthInput.Text));
-            _newDesk.SetArea(_newDesk.GetWidth(), _newDesk.GetDepth());
-            _newDesk.SetDrawerCount(drawersUpDown.Value);
-           
-            //for testing
-            var surfaceMat = desktopMatComboBox.Text;
-            //MessageBox.Show(surfaceMat);
-            var rushTime = rushComboBox.Text;
-           
-            //set =newDesk in _newQuote
-            _newQuote.SetDesk(_newDesk);
-            //setQuote for access in DisplayQuote
-            _newQuote.setQuote();
-            //_globals.AllQuotes.Add(_newQuote);
-            MessageBox.Show("_newQuote.ToString before AddQuoteToList", _newQuote.ToString());
-            AddQuoteToList(_newQuote);
-            
-            //AddQuoteToList(_newQuote);
-            
-            //
-        }
-        private void AddQuoteToList(DeskQuote deskQuote)
-        {
-            MessageBox.Show("_newQuote.ToString inside AddQuoteToList", deskQuote.ToString());
-            _globals.AllQuotes.Add(deskQuote);
-            int count = _globals.AllQuotes.Count();
-            MessageBox.Show("Added to AllQuotes, count: ", count.ToString());
-            SaveToJsonFile();
-        }
-        private  void SaveToJsonFile()
-        {
-            if (File.Exists(JsonAllQuotesFile))
-            {
-                try
-                {
-                    
-                    var jsonData = JsonConvert.SerializeObject(_globals.AllQuotes, Formatting.Indented);
-                    MessageBox.Show(jsonData);
-                    File.WriteAllText(JsonAllQuotesFile, jsonData);
-                    MessageBox.Show("Written to json to file");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex);
-                }
-            }
-            else
-            {
-                Console.WriteLine("Error: Could not find JSON File");
-            }
-            //return to menu?
-        }
+        
 
         /// <summary>
         /// poorly named close button
@@ -114,19 +56,74 @@ namespace MegaDesk_Stratton
         /// <param name="e"></param>
         private void submitQuoteBtn_Click(object sender, EventArgs e)
         {
-            createDeskQuote();
-            //var myQuote = new DeskQuote(_newDesk, _newQuote);//for testing
-            //MessageBox.Show(myQuote.ToString());
-            var viewDisplayQuote = new DisplayQuote(_newQuote, _globals);
-            // DisplayQuote viewDisplayQuote = new DisplayQuote(myQuote);
-            //MessageBox.Show("passing _globals to DisplayQuote ", _globals.ToString());
+            try 
+            {
+                CreateDeskQuote();
+                AddQuoteToList();
+                SaveToJsonFile();
+                DisplayQuote();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+            
+        
+        }
+        private void CreateDeskQuote()
+        {
+            
+            _newQuote.Date = DateTime.Now;
+            
+            _newQuote.CustomerName = custNameInput.Text;
+            _newDesk.Width = int.Parse(deskWidthInput.Text);
+            _newDesk.Depth = int.Parse(deskDepthInput.Text);
+           // _newDesk.Area = (_newDesk.Width, _newDesk.Depth);
+            _newDesk.DrawerCount = Decimal.ToInt32(drawersUpDown.Value);
+            
+            _newQuote.Desk= _newDesk;
+
+            //_newQuote.Cost;
+
+
+        }
+        private void AddQuoteToList()
+        {
+            Program._globals.AllQuotes.Add(_newQuote);
+            //SaveToJsonFile();
+        }
+        private void SaveToJsonFile()
+        {
+            if (File.Exists(JsonAllQuotesFile))
+            {
+                try
+                {
+
+                    var jsonData = JsonConvert.SerializeObject(Program._globals.AllQuotes, Formatting.Indented);
+                   // MessageBox.Show(jsonData);
+                    File.WriteAllText(JsonAllQuotesFile, jsonData);
+                    //MessageBox.Show("Written to json to file");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                }
+            }
+            else
+            {
+                Console.WriteLine(@"Error: Could not find JSON File");
+            }
+
+        }
+
+        private void DisplayQuote()
+        {
+            var viewDisplayQuote = new DisplayQuote(_newQuote);
             viewDisplayQuote.Tag = this;
             viewDisplayQuote.Show(this);
             Hide();
-                                   
-           // this.Close();
-
         }
+
         /// <summary>
         /// validating deskWidthInput
         /// </summary>
@@ -306,11 +303,10 @@ namespace MegaDesk_Stratton
         /// <param name="e"></param>
         private void desktopMatComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            //ComboBox senderComboBox = (ComboBox)sender;
+           
             string selectedMaterial = this.desktopMatComboBox.SelectedItem.ToString();
-            selectedMaterial.Trim();
-            _newDesk.SetDesktopMaterial(selectedMaterial);
-            //MessageBox.Show(selectedMaterial);
+            _newDesk.SetDesktopMaterial(selectedMaterial.Trim());
+            
         }
         /// <summary>
         /// takes combobox for rush and passes to _newQuote
@@ -320,15 +316,23 @@ namespace MegaDesk_Stratton
         private void rushComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
             string selectedRush = this.rushComboBox.SelectedItem.ToString();
-            selectedRush.Trim();
+            
             try
             {
-                _newQuote.SetRush(int.Parse(selectedRush));
-                //MessageBox.Show(selectedRush);
+                _newQuote.RushDays = int.Parse(selectedRush.Trim());
+                
             }
-            catch (Exception exc) {_newQuote.SetRush(0);
-                //MessageBox.Show(selectedRush.ToString());
+            catch (Exception exc) 
+            {
+                Debug.WriteLine(exc);
+                _newQuote.RushDays = 0;
+                
                 }
+        }
+
+        private void AddQuote_Load(object sender, EventArgs e)
+        {
+            dateLbl.Text = DateTime.Now.ToString("dd MMMM yyyy");
         }
 
         /* private void desktopMatComboBox_SelectedIndexChanged(object sender, EventArgs e)

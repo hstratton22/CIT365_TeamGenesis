@@ -13,66 +13,18 @@ namespace MegaDesk_Stratton
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        private static Globals _globals;
-        //private const string JsonAllQuotesFile = @"Data\quotes.json";
+        public static Globals _globals;
         [STAThread]
 
         static void Main()
         {
             _globals = new Globals();
-            //ReadFromJsonFile();
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //MessageBox.Show("passing _globals to Main");
-            Application.Run(new MainMenu(_globals));
+            Application.Run(new MainMenu());
            
         }
-        //private static void AddQuoteToList(DeskQuote deskQuote)
-        //{
-        //    _globals.AllQuotes.Add(deskQuote);
-        //    SaveToJsonFile();
-        //}
-        //private static void SaveToJsonFile()
-        //{
-        //    if (File.Exists(JsonAllQuotesFile))
-        //    {
-        //        try
-        //        {
-        //            var jsonData = JsonConvert.SerializeObject(_globals.AllQuotes, Formatting.Indented);
-        //            File.WriteAllText(JsonAllQuotesFile, jsonData);
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            Console.WriteLine(ex);
-        //        }
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Error: Could not find JSON File");
-        //    }
-        //    return to menu ?
-        //}
-        //private static void ReadFromJsonFile()
-        //{
-        //    if (File.Exists(JsonAllQuotesFile))
-        //    {
-        //        try
-        //        {
-        //            var jsonData = File.ReadAllText(JsonAllQuotesFile);
-        //            if (jsonData.Length > 0)
-        //            {
-        //                _globals.AllQuotes = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
-        //            }
-        //        }
-        //        catch (Exception ex)
-        //        { Console.WriteLine(ex);
-        //        }
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Error: Could not find JSON File.");
-        //    }
-        //}
-
+        
     }
     }

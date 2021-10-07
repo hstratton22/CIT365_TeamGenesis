@@ -16,17 +16,16 @@ namespace MegaDesk_Stratton
 
     {
         private DeskQuote _deskQuote;
-        private static Globals _globals;
+        
         /// <summary>
         /// receives Deskquote from AddQuote
         /// </summary>
         /// <param name="dq"></param>
 
-        public DisplayQuote(DeskQuote dq, Globals globals)
+        public DisplayQuote(DeskQuote dq)
         {
             _deskQuote = dq;
-            _globals = globals;
-
+            
             InitializeComponent();
         }
 
@@ -59,7 +58,7 @@ namespace MegaDesk_Stratton
             //viewMainMenu.Tag = this;
             //viewMainMenu.Show();
 
-            MainMenu viewMainMenu = new MainMenu(_globals);
+            MainMenu viewMainMenu = new MainMenu();
             viewMainMenu.Tag = this;
             viewMainMenu.Show(this);
             this.Hide();
@@ -80,20 +79,19 @@ namespace MegaDesk_Stratton
 
         private void DisplayQuote_Load(object sender, EventArgs e)
         {
-            displayCustNameBox.Text =  _deskQuote.GetCustName();
-            displayQuoteDrawerCntBox.Text = _deskQuote.GetDesk().GetDrawerCount().ToString();
-            displayQuoteRushBox.Text = _deskQuote.GetRush().ToString();
+            displayCustNameBox.Text =  _deskQuote.CustomerName;
+            displayQuoteDrawerCntBox.Text = _deskQuote.Desk.DrawerCount.ToString();
+            displayQuoteRushBox.Text = _deskQuote.RushDays.ToString();
             displayQuoteRushCostBox.Text = _deskQuote.CalcRushCost().ToString();
-            displayQuoteRushBox.Text = _deskQuote.GetRush().ToString();
-            displayQuoteWidthBox.Text = _deskQuote.GetDesk().GetWidth().ToString();
-            displayQuoteDepthBox.Text = _deskQuote.GetDesk().GetDepth().ToString();
-            displayQuoteAreaBox.Text = _deskQuote.GetDesk().GetArea().ToString();
+            displayQuoteWidthBox.Text = _deskQuote.Desk.Width.ToString();
+            displayQuoteDepthBox.Text = _deskQuote.Desk.Depth.ToString();
+            displayQuoteAreaBox.Text = _deskQuote.Desk.Area.ToString();
             displayQuoteAreaCostBox.Text = _deskQuote.AreaTotalCost().ToString();
-            displayQuoteDateBox.Text = _deskQuote.GetDate().ToString();
+            displayQuoteDateBox.Text = _deskQuote.Date.ToString();
             displayQuoteDrawerCostBox.Text = _deskQuote.CalcDrawerCost().ToString();
-            displayQuoteMatBox.Text = _deskQuote.GetDesk().GetDesktopMaterial().ToString();
+            displayQuoteMatBox.Text = _deskQuote.Desk.GetDesktopMaterial().ToString();
             displayQuoteMatCostBox.Text = _deskQuote.CalcSurfaceCost().ToString();
-            displayQuoteTotalCostBox.Text = _deskQuote.GetQuote().ToString();
+            displayQuoteTotalCostBox.Text = _deskQuote.Cost.ToString();
 
         }
 
