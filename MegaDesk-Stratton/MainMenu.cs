@@ -17,8 +17,10 @@ namespace MegaDesk_Stratton
         //these need passed to AddQuote
         private readonly DeskQuote _newQuote = new DeskQuote();
         private readonly Desk _newDesk = new Desk();
-        public MainMenu()
+        private static Globals _globals;
+        public MainMenu(Globals globals)
         {
+            _globals = globals;
             InitializeComponent();
         }
 
@@ -34,7 +36,8 @@ namespace MegaDesk_Stratton
         /// <param name="e"></param>
         private void addNewQuotesBtn_Click(object sender, EventArgs e)
         {
-            AddQuote viewAddQuote = new AddQuote(_newDesk, _newQuote);
+            AddQuote viewAddQuote = new AddQuote(_newDesk, _newQuote, _globals);
+            //MessageBox.Show("passing _globals to AddQuote ", _globals.AllQuotes.ToString());
             viewAddQuote.Tag = this;
             viewAddQuote.Show(this);
             this.Hide();
@@ -46,7 +49,7 @@ namespace MegaDesk_Stratton
         /// <param name="e"></param>
         private void viewQuotesBtn_Click(object sender, EventArgs e)
         {
-            ViewAllQuotes viewViewAllQuotes = new ViewAllQuotes();
+            ViewAllQuotes viewViewAllQuotes = new ViewAllQuotes(_globals);
             viewViewAllQuotes.Tag = this;
             viewViewAllQuotes.Show(this);
             this.Hide();

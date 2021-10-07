@@ -53,6 +53,7 @@ namespace MegaDesk_Stratton
             this.Name = "ViewAllQuotes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View All Quotes";
+            this.Load += new System.EventHandler(this.ViewAllQuotes_Load);
             this.ResumeLayout(false);
 
         }

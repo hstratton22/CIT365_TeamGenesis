@@ -16,25 +16,35 @@ namespace MegaDesk_Stratton
 
     {
         private DeskQuote _deskQuote;
+        private static Globals _globals;
         /// <summary>
         /// receives Deskquote from AddQuote
         /// </summary>
         /// <param name="dq"></param>
 
-        public DisplayQuote(DeskQuote dq)
+        public DisplayQuote(DeskQuote dq, Globals globals)
         {
             _deskQuote = dq;
+            _globals = globals;
 
             InitializeComponent();
         }
 
         private void displayClose_Click(object sender, EventArgs e)
         {
-           //why not working?
+            //why not working?
             // MainMenu viewMainMenu = (MainMenu)Tag;
-           // viewMainMenu.Tag = this;
-           // viewMainMenu.Show();
-           // this.Close();
+            // viewMainMenu.Tag = this;
+            // viewMainMenu.Show();
+            // this.Close();
+            //MainMenu viewMainMenu = (MainMenu)Tag;
+            //viewMainMenu.Show();
+            //this.Close();
+            //?
+            //MainMenu viewMainMenu = new MainMenu(_globals);
+            //viewMainMenu.Tag = this;
+            //viewMainMenu.Show(this);
+            //this.Close();
         }
         /// <summary>
         /// closes the quote form box
@@ -48,11 +58,17 @@ namespace MegaDesk_Stratton
             //MainMenu viewMainMenu = (MainMenu)Tag;
             //viewMainMenu.Tag = this;
             //viewMainMenu.Show();
-            this.Close();
-            Application.Exit();
+
+            MainMenu viewMainMenu = new MainMenu(_globals);
+            viewMainMenu.Tag = this;
+            viewMainMenu.Show(this);
+            this.Hide();
+
+            //this.Close();
+            //Application.Exit();
         }/// <summary>
-        /// replaces with DisplayQuote_Load
-        /// </summary>
+         /// replaces with DisplayQuote_Load
+         /// </summary>
         private void setValues()
         {
 
@@ -78,6 +94,19 @@ namespace MegaDesk_Stratton
             displayQuoteMatBox.Text = _deskQuote.GetDesk().GetDesktopMaterial().ToString();
             displayQuoteMatCostBox.Text = _deskQuote.CalcSurfaceCost().ToString();
             displayQuoteTotalCostBox.Text = _deskQuote.GetQuote().ToString();
+
+        }
+
+        private void DisplayQuote_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //MainMenu viewMainMenu = new MainMenu(_globals);
+            //viewMainMenu.Tag = this;
+            //viewMainMenu.Show(this);
+            //this.Close();
+            //MainMenu viewMainMenu = (MainMenu)Tag;
+            //viewMainMenu.Tag = this;
+            //viewMainMenu.Show();
+            //this.Close();
 
         }
 

@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace MegaDesk_Stratton
 {/// <summary>
@@ -18,19 +20,19 @@ namespace MegaDesk_Stratton
         
         private DeskQuote _newQuote;
         private Desk _newDesk;
+        private static Globals _globals;
+        private const string JsonAllQuotesFile = @"Data\quotes.json";
 
 
-
-
-
-        public AddQuote(Desk d, DeskQuote q)
+        public AddQuote(Desk d, DeskQuote q, Globals globals)
         {
             _newDesk = d;
             _newQuote = q;
+            _globals = globals;
             
             InitializeComponent();
         }/// <summary>
-        /// sets most values to _newDesk and _newQuote from user input
+        /// sets values to _newDesk and _newQuote from user input
         /// </summary>
         public void createDeskQuote()
         {
@@ -53,10 +55,46 @@ namespace MegaDesk_Stratton
             _newQuote.SetDesk(_newDesk);
             //setQuote for access in DisplayQuote
             _newQuote.setQuote();
-
-                     
+            //_globals.AllQuotes.Add(_newQuote);
+            MessageBox.Show("_newQuote.ToString before AddQuoteToList", _newQuote.ToString());
+            AddQuoteToList(_newQuote);
+            
+            //AddQuoteToList(_newQuote);
+            
+            //
         }
-         
+        private void AddQuoteToList(DeskQuote deskQuote)
+        {
+            MessageBox.Show("_newQuote.ToString inside AddQuoteToList", deskQuote.ToString());
+            _globals.AllQuotes.Add(deskQuote);
+            int count = _globals.AllQuotes.Count();
+            MessageBox.Show("Added to AllQuotes, count: ", count.ToString());
+            SaveToJsonFile();
+        }
+        private  void SaveToJsonFile()
+        {
+            if (File.Exists(JsonAllQuotesFile))
+            {
+                try
+                {
+                    
+                    var jsonData = JsonConvert.SerializeObject(_globals.AllQuotes, Formatting.Indented);
+                    MessageBox.Show(jsonData);
+                    File.WriteAllText(JsonAllQuotesFile, jsonData);
+                    MessageBox.Show("Written to json to file");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error: Could not find JSON File");
+            }
+            //return to menu?
+        }
+
         /// <summary>
         /// poorly named close button
         /// </summary>
@@ -79,8 +117,9 @@ namespace MegaDesk_Stratton
             createDeskQuote();
             //var myQuote = new DeskQuote(_newDesk, _newQuote);//for testing
             //MessageBox.Show(myQuote.ToString());
-            var viewDisplayQuote = new DisplayQuote(_newQuote);
-           // DisplayQuote viewDisplayQuote = new DisplayQuote(myQuote);
+            var viewDisplayQuote = new DisplayQuote(_newQuote, _globals);
+            // DisplayQuote viewDisplayQuote = new DisplayQuote(myQuote);
+            //MessageBox.Show("passing _globals to DisplayQuote ", _globals.ToString());
             viewDisplayQuote.Tag = this;
             viewDisplayQuote.Show(this);
             Hide();
@@ -300,6 +339,12 @@ namespace MegaDesk_Stratton
              MessageBox.Show( selectedIndex + ", " + selectedValue);
 
          }*/
+        //private static void AddQuoteToList(DeskQuote deskQuote) {
+        //_globals.AllQuotes.Add(deskQuote);
+        //SaveToJsonFile();
+        //}
+        //private 
     }
+
     
 }

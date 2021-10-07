@@ -7,13 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace MegaDesk_Stratton
 {
     public partial class ViewAllQuotes : Form
     {
-        public ViewAllQuotes()
+        private static Globals _globals;
+        private const string JsonAllQuotesFile = @"Data\quotes.json";
+
+        public ViewAllQuotes(Globals globals)
         {
+            _globals = globals;
             InitializeComponent();
         }
 
@@ -22,6 +28,43 @@ namespace MegaDesk_Stratton
             MainMenu viewMainMenu = (MainMenu)Tag;
             viewMainMenu.Show();
             this.Close();
+        }
+
+        private static void ReadFromJsonFile()
+        {
+            if (File.Exists(JsonAllQuotesFile))
+            {
+                try
+                {
+                    var jsonData = File.ReadAllText(JsonAllQuotesFile);
+                    if (jsonData.Length > 0)
+                    {
+                        _globals.AllQuotes = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error: Could not find JSON File.");
+            }
+        }
+
+        private void ViewAllQuotes_Load(object sender, EventArgs e)
+        {
+            ReadFromJsonFile();
+            ListQuotes();
+
+        }
+        private void ListQuotes()
+        {
+            foreach (DeskQuote deskQuote in _globals.AllQuotes)
+            {
+                MessageBox.Show($"- {deskQuote.GetCustName()}, $ {deskQuote.GetQuote()}");
+            }
         }
     }
 }

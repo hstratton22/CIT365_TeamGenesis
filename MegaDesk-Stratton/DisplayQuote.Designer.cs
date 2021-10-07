@@ -387,7 +387,7 @@ namespace MegaDesk_Stratton
             this.displayQuoteMenuBtn.Name = "displayQuoteMenuBtn";
             this.displayQuoteMenuBtn.Size = new System.Drawing.Size(85, 29);
             this.displayQuoteMenuBtn.TabIndex = 33;
-            this.displayQuoteMenuBtn.Text = "Close";
+            this.displayQuoteMenuBtn.Text = "Menu";
             this.displayQuoteMenuBtn.UseVisualStyleBackColor = false;
             this.displayQuoteMenuBtn.Click += new System.EventHandler(this.displayQuoteMenuBtn_Click);
             // 
@@ -483,6 +483,7 @@ namespace MegaDesk_Stratton
             this.Name = "DisplayQuote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Display Quote";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DisplayQuote_FormClosed);
             this.Load += new System.EventHandler(this.DisplayQuote_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
