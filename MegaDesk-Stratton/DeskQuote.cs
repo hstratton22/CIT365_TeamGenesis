@@ -14,7 +14,6 @@ namespace MegaDesk_Stratton
         private int _rush;
         private int[,] rushShipping;
         //private int quote;
-
         private const int BaseCost = 200;
         private const int PerDrawer = 50;
         private const int OversizeSurface = 1;

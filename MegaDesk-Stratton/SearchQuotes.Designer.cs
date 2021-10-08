@@ -30,6 +30,8 @@ namespace MegaDesk_Stratton
         private void InitializeComponent()
         {
             this.searchQuotesClose = new System.Windows.Forms.Button();
+            this.searchLbl = new System.Windows.Forms.Label();
+            this.searchMaterialsComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // searchQuotesClose
@@ -42,11 +44,31 @@ namespace MegaDesk_Stratton
             this.searchQuotesClose.UseVisualStyleBackColor = true;
             this.searchQuotesClose.Click += new System.EventHandler(this.searchQuotesClose_Click);
             // 
+            // searchLbl
+            // 
+            this.searchLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLbl.Location = new System.Drawing.Point(54, 38);
+            this.searchLbl.Name = "searchLbl";
+            this.searchLbl.Size = new System.Drawing.Size(150, 25);
+            this.searchLbl.TabIndex = 1;
+            this.searchLbl.Text = "Search By Material: ";
+            // 
+            // searchMaterialsComboBox
+            // 
+            this.searchMaterialsComboBox.FormattingEnabled = true;
+            this.searchMaterialsComboBox.Location = new System.Drawing.Point(210, 38);
+            this.searchMaterialsComboBox.Name = "searchMaterialsComboBox";
+            this.searchMaterialsComboBox.Size = new System.Drawing.Size(121, 21);
+            this.searchMaterialsComboBox.TabIndex = 2;
+            this.searchMaterialsComboBox.SelectedIndexChanged += new System.EventHandler(this.searchMaterialsComboBox_SelectedIndexChanged);
+            // 
             // SearchQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.searchMaterialsComboBox);
+            this.Controls.Add(this.searchLbl);
             this.Controls.Add(this.searchQuotesClose);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -60,5 +82,7 @@ namespace MegaDesk_Stratton
         #endregion
 
         private System.Windows.Forms.Button searchQuotesClose;
+        private System.Windows.Forms.Label searchLbl;
+        private System.Windows.Forms.ComboBox searchMaterialsComboBox;
     }
 }

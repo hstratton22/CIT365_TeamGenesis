@@ -36,14 +36,12 @@ namespace MegaDesk_Stratton
             // viewMainMenu.Tag = this;
             // viewMainMenu.Show();
             // this.Close();
+
             //MainMenu viewMainMenu = (MainMenu)Tag;
             //viewMainMenu.Show();
             //this.Close();
-            //?
-            //MainMenu viewMainMenu = new MainMenu(_globals);
-            //viewMainMenu.Tag = this;
-            //viewMainMenu.Show(this);
-            //this.Close();
+            
+            
         }
         /// <summary>
         /// closes the quote form box
@@ -52,20 +50,14 @@ namespace MegaDesk_Stratton
         /// <param name="e"></param>
         private void displayQuoteMenuBtn_Click(object sender, EventArgs e)
         {
-            //why not working?
-            //System.InvalidCastException: 'Unable to cast object of type 'MegaDesk_Stratton.AddQuote' to type 
-            //MainMenu viewMainMenu = (MainMenu)Tag;
-            //viewMainMenu.Tag = this;
-            //viewMainMenu.Show();
-
+            
             MainMenu viewMainMenu = new MainMenu();
             viewMainMenu.Tag = this;
             viewMainMenu.Show(this);
             this.Hide();
 
-            //this.Close();
-            //Application.Exit();
-        }/// <summary>
+        }
+        /// <summary>
          /// replaces with DisplayQuote_Load
          /// </summary>
         private void setValues()
@@ -97,20 +89,13 @@ namespace MegaDesk_Stratton
 
         private void DisplayQuote_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //MainMenu viewMainMenu = new MainMenu(_globals);
+            //MainMenu viewMainMenu = new MainMenu();
             //viewMainMenu.Tag = this;
             //viewMainMenu.Show(this);
             //this.Close();
-            //MainMenu viewMainMenu = (MainMenu)Tag;
-            //viewMainMenu.Tag = this;
-            //viewMainMenu.Show();
-            //this.Close();
-
+            
         }
 
-        /*private void displayQuoteWidthBox_Click(object sender, EventArgs e)
-        {
-            displayQuoteWidthBox.Text = _deskQuote.GetCustName();
-        }*/
+        
     }
 }

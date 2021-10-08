@@ -21,8 +21,8 @@ namespace MegaDesk_Stratton
         private int _width;
         private int _depth;
         //private int _drawerCount;
-        private int _area;
-        private DesktopMaterial _desktopMaterial = DesktopMaterial.Pine;
+        //private int _area;
+        private DesktopMaterial _desktopMaterial;// = DesktopMaterial.Pine;
 
         public int GetMinWidth() { return MinWidth; }
         public int GetMaxWidth() { return MaxWidth; }
@@ -45,10 +45,10 @@ namespace MegaDesk_Stratton
             } }
         public int Area
         {
-            get { return _area; }
-            set
-            {
-                _area = _width * _depth;
+            get { return _width * _depth;//_area; }
+            //set
+            //{
+            //    _area = _width * _depth;
 
             }
         }
@@ -57,17 +57,34 @@ namespace MegaDesk_Stratton
         public bool ValidatedDepth(int depthInput) { if (depthInput >= MinDepth && depthInput <= MaxDepth) return true; else return false; }
         
         public int DrawerCount { get; set; }
-        /// <summary>
-        /// numericupdown uses decimal so converted here
-        /// </summary>
-        /// <param name="count"></param>
-       // public void SetDrawerCount(decimal count) { _drawerCount = Decimal.ToInt32(count); }
-        public DesktopMaterial GetDesktopMaterial() {return _desktopMaterial;}
-        public void SetDesktopMaterial( DesktopMaterial sm)
+
+
+        //public DesktopMaterial DesktopMaterial
+        //{
+        //    get
+        //    {
+        //        return _desktopMaterial;
+        //    }
+        //    set
+        //    {
+        //        switch (value)
+        //        {
+        //            case "Laminate": _desktopMaterial = DesktopMaterial.Laminate; break;
+        //            case "Oak": _desktopMaterial = DesktopMaterial.Oak; break;
+        //            case "Pine": _desktopMaterial = DesktopMaterial.Pine; break;
+        //            case "Rosewood": _desktopMaterial = DesktopMaterial.Rosewood; break;
+        //            case "Veneer": _desktopMaterial = DesktopMaterial.Veneer; break;
+        //            default: _desktopMaterial = DesktopMaterial.Pine; break;
+        //        }
+        //    }
+        //}
+        public DesktopMaterial GetDesktopMaterial() { return _desktopMaterial; }
+        public void SetDesktopMaterial(DesktopMaterial sm)
         {
             _desktopMaterial = sm;
 
-        }/// <summary>
+        }
+        /// <summary>
         /// gets string from combobox selection and sets the value to the enum
         /// </summary>
         /// <param name="sm"></param>
@@ -75,14 +92,15 @@ namespace MegaDesk_Stratton
         {
             switch (sm)
             {
-                case "Laminate":_desktopMaterial= DesktopMaterial.Laminate; break;
-                case "Oak": _desktopMaterial= DesktopMaterial.Oak; break;
+                case "Laminate": _desktopMaterial = DesktopMaterial.Laminate; break;
+                case "Oak": _desktopMaterial = DesktopMaterial.Oak; break;
                 case "Pine": _desktopMaterial = DesktopMaterial.Pine; break;
                 case "Rosewood": _desktopMaterial = DesktopMaterial.Rosewood; break;
                 case "Veneer": _desktopMaterial = DesktopMaterial.Veneer; break;
                 default: _desktopMaterial = DesktopMaterial.Pine; break;
             }
-        }/// <summary>
+        }
+        /// <summary>
         /// override of ToString() for testing references
         /// </summary>
         /// <returns></returns>
@@ -94,6 +112,7 @@ namespace MegaDesk_Stratton
 
 
 
+    
     }/// <summary>
     /// surface options enum
     /// </summary>

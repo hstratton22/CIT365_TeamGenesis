@@ -14,14 +14,11 @@ namespace MegaDesk_Stratton
 /// </summary>
     public partial class MainMenu : Form
     {
-        //these need passed to AddQuote
-        //private readonly DeskQuote _newQuote = new DeskQuote();
-        //private readonly Desk _newDesk = new Desk();
+        
         public static Globals _globals;
         public MainMenu()
         {
-            //_globals = globals;
-            InitializeComponent();
+           InitializeComponent();
         }
 
         private void MainMenu_Load(object sender, EventArgs e)
@@ -36,8 +33,7 @@ namespace MegaDesk_Stratton
         /// <param name="e"></param>
         private void addNewQuotesBtn_Click(object sender, EventArgs e)
         {
-            AddQuote viewAddQuote = new AddQuote();//_newDesk, _newQuote, _globals);
-            //MessageBox.Show("passing _globals to AddQuote ", _globals.AllQuotes.ToString());
+            AddQuote viewAddQuote = new AddQuote();
             viewAddQuote.Tag = this;
             viewAddQuote.Show(this);
             this.Hide();

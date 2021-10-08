@@ -22,21 +22,15 @@ namespace MegaDesk_Stratton
         
         private readonly DeskQuote _newQuote = new DeskQuote();
         private readonly Desk _newDesk = new Desk();
-        //private static Globals _globals;
         private const string JsonAllQuotesFile = @"Data\quotes.json";
 
 
-        public AddQuote()//Desk d, DeskQuote q, Globals globals)
+        public AddQuote()
         {
                                   
             InitializeComponent();
         }
         
-        /// <summary>
-        /// sets values to _newDesk and _newQuote from user input
-        /// </summary>
-        
-
         /// <summary>
         /// poorly named close button
         /// </summary>
@@ -70,6 +64,9 @@ namespace MegaDesk_Stratton
             
         
         }
+        /// <summary>
+        /// sets values to _newDesk and _newQuote from user input
+        /// </summary>
         private void CreateDeskQuote()
         {
             
@@ -78,19 +75,15 @@ namespace MegaDesk_Stratton
             _newQuote.CustomerName = custNameInput.Text;
             _newDesk.Width = int.Parse(deskWidthInput.Text);
             _newDesk.Depth = int.Parse(deskDepthInput.Text);
-           // _newDesk.Area = (_newDesk.Width, _newDesk.Depth);
             _newDesk.DrawerCount = Decimal.ToInt32(drawersUpDown.Value);
-            
+            //_newDesk.Area = 
             _newQuote.Desk= _newDesk;
-
-            //_newQuote.Cost;
-
-
+           
         }
         private void AddQuoteToList()
         {
             Program._globals.AllQuotes.Add(_newQuote);
-            //SaveToJsonFile();
+            
         }
         private void SaveToJsonFile()
         {
@@ -100,9 +93,8 @@ namespace MegaDesk_Stratton
                 {
 
                     var jsonData = JsonConvert.SerializeObject(Program._globals.AllQuotes, Formatting.Indented);
-                   // MessageBox.Show(jsonData);
                     File.WriteAllText(JsonAllQuotesFile, jsonData);
-                    //MessageBox.Show("Written to json to file");
+                    
                 }
                 catch (Exception ex)
                 {
@@ -139,8 +131,7 @@ namespace MegaDesk_Stratton
                 {
                     if (!Char.IsDigit(deskWidthInput.Text[ch]) && (!Char.IsControl(deskWidthInput.Text[ch])))
                     {
-                        //MessageBox.Show("not digit!");
-                        //can still submit although not valid....
+                        
                         e.Cancel= true;
                         deskWidthInput.Select(0, deskWidthInput.Text.Length);
                         deskWidthInput.Focus();
@@ -149,7 +140,7 @@ namespace MegaDesk_Stratton
                     }
                     else
                     {
-                        errorProvider2.SetError(deskWidthInput, "");//Please enter a number
+                        errorProvider2.SetError(deskWidthInput, "");
                         if (!ValidWidth(deskWidthInput.Text))
                         {
 
@@ -158,7 +149,7 @@ namespace MegaDesk_Stratton
                         }
                         else
                         {
-                            errorProvider2.SetError(deskWidthInput, String.Empty);//"Valid");//);//this.
+                            errorProvider2.SetError(deskWidthInput, String.Empty);
                         }
 
                         
@@ -171,20 +162,18 @@ namespace MegaDesk_Stratton
                 errorProvider2.SetError(deskWidthInput, "Enter valid number");
             }
           
-}/// <summary>
-/// bool to check if width input is valid using method from Desk class
-/// </summary>
-/// <param name="widthInput"></param>
-/// <returns></returns>
+}       /// <summary>
+        /// bool to check if width input is valid using method from Desk class
+        /// </summary>
+        /// <param name="widthInput"></param>
+        /// <returns></returns>
         public bool ValidWidth(string widthInput)
-        {
-            
+        {            
                 if (_newDesk.ValidatedWidth(int.Parse(widthInput)))
                 { return true; }
                 else
                 { return false; }
             
-
          }
         /// <summary>
         /// makes sure input string isn't empty 
@@ -227,7 +216,8 @@ namespace MegaDesk_Stratton
                 e.Cancel = true;
                 errorProvider3.SetError(deskDepthInput, "Enter a valid number.");
             }
-        }/// <summary>
+        }
+        /// <summary>
         /// bool
         /// validates depth using method from Desk
         /// </summary>
@@ -238,32 +228,7 @@ namespace MegaDesk_Stratton
             { return true; }
             else return false;
         }
-        /*
-        private bool notNumber = false;
-        private void deskWidthInput_KeyDown(object sender, KeyEventArgs e)
-        {
-            notNumber = false;
-            if (e.KeyCode < Keys.D0 || e.KeyCode > Keys.D9)
-            {
-                if (e.KeyCode < Keys.NumPad0 || e.KeyCode > Keys.NumPad9)
-                {
-                    if(e.KeyCode != Keys.Back)
-                    {
-                        notNumber = true;
-                    }
-                }
-            }
-            if (Control.ModifierKeys == Keys.Shift)
-            {
-                notNumber = true;
-            }
-        }
         
-        private void deskWidthInput_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (notNumber) e.Handled = true;
-        }
-        */
         
         private bool depthNotNumber = false;
         /// <summary>
@@ -307,6 +272,7 @@ namespace MegaDesk_Stratton
             string selectedMaterial = this.desktopMatComboBox.SelectedItem.ToString();
             _newDesk.SetDesktopMaterial(selectedMaterial.Trim());
             
+
         }
         /// <summary>
         /// takes combobox for rush and passes to _newQuote
@@ -335,19 +301,7 @@ namespace MegaDesk_Stratton
             dateLbl.Text = DateTime.Now.ToString("dd MMMM yyyy");
         }
 
-        /* private void desktopMatComboBox_SelectedIndexChanged(object sender, EventArgs e)
-         {//not set to instance of object?
-             ComboBox cmb = (ComboBox)sender;
-             int selectedIndex = cmb.SelectedIndex;
-             int selectedValue = (int)cmb.SelectedValue;
-             MessageBox.Show( selectedIndex + ", " + selectedValue);
-
-         }*/
-        //private static void AddQuoteToList(DeskQuote deskQuote) {
-        //_globals.AllQuotes.Add(deskQuote);
-        //SaveToJsonFile();
-        //}
-        //private 
+        
     }
 
     

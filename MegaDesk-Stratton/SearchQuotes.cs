@@ -23,5 +23,10 @@ namespace MegaDesk_Stratton
             viewMainMenu.Show();
             this.Close();
         }
+
+        private void searchMaterialsComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
