@@ -34,7 +34,7 @@ namespace MegaDesk_Stratton
         public int Cost { 
             get
             { 
-                return AreaTotalCost() + CalcDrawerCost() + CalcRushCost() + CalcSurfaceCost(); //return _cost; }
+                return AreaTotalCost() + CalcDrawerCost() + CalcRushCost() + CalcSurfaceCost();
             }
              }
 
@@ -98,41 +98,36 @@ namespace MegaDesk_Stratton
         }
         /// <summary>
          /// calculates surface cost using enum DesktopMaterial
-         /// </summary>
+         /// </summary> 
          /// <returns></returns>
         public int CalcSurfaceCost()
         {
-            int result = 0;
-            switch (Desk.GetDesktopMaterial())
+            if (Desk.desktopMaterial == DesktopMaterial.Laminate)
             {
-                case DesktopMaterial.Laminate: result = 100; break;
-                case DesktopMaterial.Oak: result = 200; break;
-                case DesktopMaterial.Pine: result = 50; break;
-                case DesktopMaterial.Rosewood: result = 300; break;
-                case DesktopMaterial.Veneer: result = 125; break;
+                return 100;
             }
-            return result;
 
-
-        }
-        /// <summary>
-        /// calculates surface cost using string from combobox
-        /// </summary>
-        /// <param name="selectedSurface"></param>
-        /// <returns></returns>
-        public int CalcSurfaceCost(string selectedSurface)
-        {
-            int result = 0;
-            switch (selectedSurface)
+            if (Desk.desktopMaterial == DesktopMaterial.Oak)
             {
-                case "Laminate": result = 100; break;
-                case "Oak": result = 200; break;
-                case "Pine": result = 50; break;
-                case "Rosewood": result = 300; break;
-                case "Veneer": result = 125; break;
+                return 200;
             }
-            return result;
 
+            if (Desk.desktopMaterial == DesktopMaterial.Pine)
+            {
+                return 50;
+            }
+
+            if (Desk.desktopMaterial == DesktopMaterial.Rosewood)
+            {
+                return 300;
+            }
+
+            if (Desk.desktopMaterial == DesktopMaterial.Veneer)
+            {
+                return 125;
+            }
+
+            return 50;
 
         }
         /// <summary>

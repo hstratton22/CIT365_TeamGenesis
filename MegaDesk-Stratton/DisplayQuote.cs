@@ -81,7 +81,7 @@ namespace MegaDesk_Stratton
             displayQuoteAreaCostBox.Text = _deskQuote.AreaTotalCost().ToString();
             displayQuoteDateBox.Text = _deskQuote.date;
             displayQuoteDrawerCostBox.Text = _deskQuote.CalcDrawerCost().ToString();
-            displayQuoteMatBox.Text = _deskQuote.Desk.GetDesktopMaterial().ToString();
+            displayQuoteMatBox.Text = _deskQuote.Desk.desktopMaterial.ToString();
             displayQuoteMatCostBox.Text = _deskQuote.CalcSurfaceCost().ToString();
             displayQuoteTotalCostBox.Text = _deskQuote.Cost.ToString();
 

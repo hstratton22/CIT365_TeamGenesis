@@ -71,7 +71,6 @@ namespace MegaDesk_Stratton
             _newDesk.Width = int.Parse(deskWidthInput.Text);
             _newDesk.Depth = int.Parse(deskDepthInput.Text);
             _newDesk.DrawerCount = Decimal.ToInt32(drawersUpDown.Value);
-            //_newDesk.Area = 
             _newQuote.Desk= _newDesk;
            
         }
@@ -264,8 +263,9 @@ namespace MegaDesk_Stratton
         private void desktopMatComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
            
-            string selectedMaterial = this.desktopMatComboBox.SelectedItem.ToString();
-            _newDesk.SetDesktopMaterial(selectedMaterial.Trim());
+            ComboboxItem materialSelectedItem = (ComboboxItem) this.desktopMatComboBox.SelectedItem;
+            DesktopMaterial material = (DesktopMaterial) materialSelectedItem.Value;
+            _newDesk.desktopMaterial = material;
             
 
         }

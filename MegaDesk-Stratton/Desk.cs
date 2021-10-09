@@ -20,10 +20,7 @@ namespace MegaDesk_Stratton
         
         private int _width;
         private int _depth;
-        //private int _drawerCount;
-        //private int _area;
-        private DesktopMaterial _desktopMaterial;// = DesktopMaterial.Pine;
-
+        public DesktopMaterial desktopMaterial { get; set; }
         public int GetMinWidth() { return MinWidth; }
         public int GetMaxWidth() { return MaxWidth; }
         public int GetMinDepth() { return MinDepth; }
@@ -45,12 +42,7 @@ namespace MegaDesk_Stratton
             } }
         public int Area
         {
-            get { return _width * _depth;//_area; }
-            //set
-            //{
-            //    _area = _width * _depth;
-
-            }
+            get { return _width * _depth; }
         }
         public bool ValidatedWidth(int widthInput) { if (widthInput >= MinWidth && widthInput <= MaxWidth) return true; else return false; }
 
@@ -59,47 +51,6 @@ namespace MegaDesk_Stratton
         public int DrawerCount { get; set; }
 
 
-        //public DesktopMaterial DesktopMaterial
-        //{
-        //    get
-        //    {
-        //        return _desktopMaterial;
-        //    }
-        //    set
-        //    {
-        //        switch (value)
-        //        {
-        //            case "Laminate": _desktopMaterial = DesktopMaterial.Laminate; break;
-        //            case "Oak": _desktopMaterial = DesktopMaterial.Oak; break;
-        //            case "Pine": _desktopMaterial = DesktopMaterial.Pine; break;
-        //            case "Rosewood": _desktopMaterial = DesktopMaterial.Rosewood; break;
-        //            case "Veneer": _desktopMaterial = DesktopMaterial.Veneer; break;
-        //            default: _desktopMaterial = DesktopMaterial.Pine; break;
-        //        }
-        //    }
-        //}
-        public DesktopMaterial GetDesktopMaterial() { return _desktopMaterial; }
-        public void SetDesktopMaterial(DesktopMaterial sm)
-        {
-            _desktopMaterial = sm;
-
-        }
-        /// <summary>
-        /// gets string from combobox selection and sets the value to the enum
-        /// </summary>
-        /// <param name="sm"></param>
-        public void SetDesktopMaterial(string sm)
-        {
-            switch (sm)
-            {
-                case "Laminate": _desktopMaterial = DesktopMaterial.Laminate; break;
-                case "Oak": _desktopMaterial = DesktopMaterial.Oak; break;
-                case "Pine": _desktopMaterial = DesktopMaterial.Pine; break;
-                case "Rosewood": _desktopMaterial = DesktopMaterial.Rosewood; break;
-                case "Veneer": _desktopMaterial = DesktopMaterial.Veneer; break;
-                default: _desktopMaterial = DesktopMaterial.Pine; break;
-            }
-        }
         /// <summary>
         /// override of ToString() for testing references
         /// </summary>

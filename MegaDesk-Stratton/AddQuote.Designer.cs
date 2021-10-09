@@ -159,12 +159,16 @@ namespace MegaDesk_Stratton
             this.desktopMatComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.desktopMatComboBox.FormattingEnabled = true;
             this.desktopMatComboBox.ItemHeight = 20;
-            this.desktopMatComboBox.Items.AddRange(new object[] {
-            "laminate",
-            "oak",
-            "pine",
-            "rosewood",
-            "veneer"});
+            ComboboxItem laminate = new ComboboxItem("Laminate", DesktopMaterial.Laminate);
+            ComboboxItem oak = new ComboboxItem("Oak", DesktopMaterial.Oak);
+            ComboboxItem rosewood = new ComboboxItem("Rosewood", DesktopMaterial.Rosewood);
+            ComboboxItem veneer = new ComboboxItem("Veneer", DesktopMaterial.Veneer);
+            ComboboxItem pine = new ComboboxItem("Pine", DesktopMaterial.Pine);
+            this.desktopMatComboBox.Items.Add(laminate);
+            this.desktopMatComboBox.Items.Add(oak);
+            this.desktopMatComboBox.Items.Add(rosewood);
+            this.desktopMatComboBox.Items.Add(veneer);
+            this.desktopMatComboBox.Items.Add(pine);
             this.desktopMatComboBox.Location = new System.Drawing.Point(209, 198);
             this.desktopMatComboBox.Name = "desktopMatComboBox";
             this.desktopMatComboBox.Size = new System.Drawing.Size(150, 28);
