@@ -65,7 +65,7 @@ namespace MegaDesk_Stratton
         private void CreateDeskQuote()
         {
             
-            _newQuote.Date = date;
+            _newQuote.date = date.ToString("MMMM dd, yyyy");
             
             _newQuote.CustomerName = custNameInput.Text;
             _newDesk.Width = int.Parse(deskWidthInput.Text);

@@ -27,7 +27,8 @@ namespace MegaDesk_Stratton
         
         public string CustomerName { get; set; }
         //public int Rush { get; set; }
-        public DateTime Date { get; set; }
+        //public DateTime Date { get; set; }
+        public String date { get; set; }
         public int RushDays { get; set; }
         public Desk Desk { get; set; }
         public int Cost { 
