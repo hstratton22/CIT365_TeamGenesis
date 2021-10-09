@@ -53,7 +53,6 @@ namespace MegaDesk_Stratton
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(599, 219);
             this.dataGridView1.TabIndex = 1;
-           
             // 
             // ViewAllQuotes
             // 
