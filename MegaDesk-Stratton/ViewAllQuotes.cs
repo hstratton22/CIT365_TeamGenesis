@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Newtonsoft.Json;
+using System.Reflection;
 
 namespace MegaDesk_Stratton
 {
@@ -30,7 +31,7 @@ namespace MegaDesk_Stratton
             viewMainMenu.Show();
             this.Close();
         }
-        /*
+        
         private static void ReadFromJsonFile()
         {
             if (File.Exists(JsonAllQuotesFile))
@@ -53,21 +54,21 @@ namespace MegaDesk_Stratton
                 Console.WriteLine(@"Error: Could not find JSON File.");
             }
         }
-        */
+        
         private void ViewAllQuotes_Load(object sender, EventArgs e)
         {
-            Program.ReadFromJsonFile();
+            //Program.
+            //ReadFromJsonFile();
+            //dataGridView1.AutoGenerateColumns = false;
             ListQuotes();
 
         }
         private void ListQuotes()
         {
-            //foreach (DeskQuote deskQuote in Program._globals.AllQuotes)
-            //{
-            //    MessageBox.Show($@"- {deskQuote.CustomerName}, $ {deskQuote.Cost}");
-            //}
+            
             var jsonData = File.ReadAllText(JsonAllQuotesFile);
             dataGridView1.DataSource = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
         }
+        
     }
 }

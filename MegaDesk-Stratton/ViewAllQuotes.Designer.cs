@@ -46,11 +46,14 @@ namespace MegaDesk_Stratton
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 64);
+            this.dataGridView1.Location = new System.Drawing.Point(77, 65);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(732, 212);
+            this.dataGridView1.Size = new System.Drawing.Size(599, 219);
             this.dataGridView1.TabIndex = 1;
+           
             // 
             // ViewAllQuotes
             // 

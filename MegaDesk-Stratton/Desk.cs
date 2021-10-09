@@ -57,16 +57,17 @@ namespace MegaDesk_Stratton
         /// <returns></returns>
         public override string ToString()
         {
-            return base.ToString(); // + "width: " + width + "\n" + " depth: "+ depth;
+            return ("Width: " + this.Width.ToString() +  ", Depth: " + this.Depth.ToString() + ", Material: " + this.desktopMaterial.ToString());
+                //base.ToString(); // + "width: " + width + "\n" + " depth: "+ depth;
         }
 
 
 
 
-    
+
     }/// <summary>
-    /// surface options enum
-    /// </summary>
+     /// surface options enum
+     /// </summary>
     public enum DesktopMaterial
     {
         Laminate, Oak, Pine, Rosewood, Veneer
