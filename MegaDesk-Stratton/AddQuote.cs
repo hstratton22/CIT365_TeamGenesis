@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 
@@ -23,12 +17,13 @@ namespace MegaDesk_Stratton
         private readonly DeskQuote _newQuote = new DeskQuote();
         private readonly Desk _newDesk = new Desk();
         private const string JsonAllQuotesFile = @"Data\quotes.json";
-
+        private DateTime date = DateTime.Now;
 
         public AddQuote()
         {
                                   
             InitializeComponent();
+            dateTimer.Start();
         }
         
         /// <summary>
@@ -70,7 +65,7 @@ namespace MegaDesk_Stratton
         private void CreateDeskQuote()
         {
             
-            _newQuote.Date = DateTime.Now;
+            _newQuote.Date = date;
             
             _newQuote.CustomerName = custNameInput.Text;
             _newDesk.Width = int.Parse(deskWidthInput.Text);
@@ -296,12 +291,11 @@ namespace MegaDesk_Stratton
                 }
         }
 
-        private void AddQuote_Load(object sender, EventArgs e)
+    
+        private void dateTimer_Tick(object sender, EventArgs e)
         {
-            dateLbl.Text = DateTime.Now.ToString("dd MMMM yyyy");
+            dateLbl.Text = date.ToString("MMMM dd, yyyy");
         }
-
-        
     }
 
     

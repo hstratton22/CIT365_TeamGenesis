@@ -48,6 +48,7 @@ namespace MegaDesk_Stratton
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.dateTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.drawersUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -212,12 +213,11 @@ namespace MegaDesk_Stratton
             // 
             // dateLbl
             // 
-            this.dateLbl.AutoSize = true;
             this.dateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateLbl.Location = new System.Drawing.Point(25, 378);
+            this.dateLbl.Location = new System.Drawing.Point(21, 369);
             this.dateLbl.Name = "dateLbl";
             this.dateLbl.Padding = new System.Windows.Forms.Padding(2);
-            this.dateLbl.Size = new System.Drawing.Size(16, 21);
+            this.dateLbl.Size = new System.Drawing.Size(291, 29);
             this.dateLbl.TabIndex = 9;
             this.dateLbl.Text = " ";
             // 
@@ -232,6 +232,10 @@ namespace MegaDesk_Stratton
             // errorProvider3
             // 
             this.errorProvider3.ContainerControl = this;
+            // 
+            // dateTimer
+            // 
+            this.dateTimer.Tick += new System.EventHandler(this.dateTimer_Tick);
             // 
             // AddQuote
             // 
@@ -258,7 +262,6 @@ namespace MegaDesk_Stratton
             this.Name = "AddQuote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Quote";
-            this.Load += new System.EventHandler(this.AddQuote_Load);
             ((System.ComponentModel.ISupportInitialize)(this.drawersUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
@@ -288,5 +291,6 @@ namespace MegaDesk_Stratton
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
+        private System.Windows.Forms.Timer dateTimer;
     }
 }
