@@ -16,6 +16,8 @@ namespace MegaDesk_Stratton
     {
         
         private const string JsonAllQuotesFile = @"Data\quotes.json";
+        //List<DeskQuote> allDeskQuotes;
+         
 
         public ViewAllQuotes()
         {
@@ -60,10 +62,12 @@ namespace MegaDesk_Stratton
         }
         private void ListQuotes()
         {
-            foreach (DeskQuote deskQuote in Program._globals.AllQuotes)
-            {
-                MessageBox.Show($@"- {deskQuote.CustomerName}, $ {deskQuote.Cost}");
-            }
+            //foreach (DeskQuote deskQuote in Program._globals.AllQuotes)
+            //{
+            //    MessageBox.Show($@"- {deskQuote.CustomerName}, $ {deskQuote.Cost}");
+            //}
+            var jsonData = File.ReadAllText(JsonAllQuotesFile);
+            dataGridView1.DataSource = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
         }
     }
 }

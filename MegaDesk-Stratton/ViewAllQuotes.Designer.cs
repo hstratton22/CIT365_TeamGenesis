@@ -30,6 +30,8 @@ namespace MegaDesk_Stratton
         private void InitializeComponent()
         {
             this.allQuotesClose = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // allQuotesClose
@@ -42,11 +44,20 @@ namespace MegaDesk_Stratton
             this.allQuotesClose.UseVisualStyleBackColor = true;
             this.allQuotesClose.Click += new System.EventHandler(this.allQuotesClose_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(36, 64);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(732, 212);
+            this.dataGridView1.TabIndex = 1;
+            // 
             // ViewAllQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.allQuotesClose);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -54,6 +65,7 @@ namespace MegaDesk_Stratton
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View All Quotes";
             this.Load += new System.EventHandler(this.ViewAllQuotes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -61,5 +73,6 @@ namespace MegaDesk_Stratton
         #endregion
 
         private System.Windows.Forms.Button allQuotesClose;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -67,15 +67,18 @@ namespace MegaDesk_Stratton
         //    }
         //    set
         //    {
+
         //        switch (value)
         //        {
-        //            case "Laminate": _desktopMaterial = DesktopMaterial.Laminate; break;
-        //            case "Oak": _desktopMaterial = DesktopMaterial.Oak; break;
-        //            case "Pine": _desktopMaterial = DesktopMaterial.Pine; break;
-        //            case "Rosewood": _desktopMaterial = DesktopMaterial.Rosewood; break;
-        //            case "Veneer": _desktopMaterial = DesktopMaterial.Veneer; break;
+        //            case 0: _desktopMaterial = DesktopMaterial.Laminate; break;
+
+        //            case 1: _desktopMaterial = DesktopMaterial.Oak; break;
+        //            case 2: _desktopMaterial = DesktopMaterial.Pine; break;
+        //            case 3: _desktopMaterial = DesktopMaterial.Rosewood; break;
+        //            case 4: _desktopMaterial = DesktopMaterial.Veneer; break;
         //            default: _desktopMaterial = DesktopMaterial.Pine; break;
         //        }
+
         //    }
         //}
         public DesktopMaterial GetDesktopMaterial() { return _desktopMaterial; }
