@@ -69,6 +69,7 @@ namespace MegaDesk_Stratton
             var jsonData = File.ReadAllText(JsonAllQuotesFile);
             dataGridView1.DataSource = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
             dataGridView1.AutoResizeColumns();
+            dataGridView1.RowHeadersVisible = false;
         }
         
     }

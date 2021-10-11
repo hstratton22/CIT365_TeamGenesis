@@ -66,6 +66,7 @@ namespace MegaDesk_Stratton
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::MegaDesk_Stratton.Properties.Resources.woodgrain_texture_background;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.searchMaterialsComboBox);
             this.Controls.Add(this.searchLbl);
