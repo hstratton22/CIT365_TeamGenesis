@@ -296,6 +296,7 @@ namespace MegaDesk_Stratton
         {
             dateLbl.Text = date.ToString("MMMM dd, yyyy");
         }
+        
     }
 
     
