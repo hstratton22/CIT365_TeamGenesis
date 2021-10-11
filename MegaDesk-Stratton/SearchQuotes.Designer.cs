@@ -52,9 +52,11 @@ namespace MegaDesk_Stratton
             this.searchLbl.Size = new System.Drawing.Size(150, 25);
             this.searchLbl.TabIndex = 1;
             this.searchLbl.Text = "Search By Material: ";
+            this.searchLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // searchMaterialsComboBox
             // 
+            this.searchMaterialsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.searchMaterialsComboBox.FormattingEnabled = true;
             this.searchMaterialsComboBox.Location = new System.Drawing.Point(210, 38);
             this.searchMaterialsComboBox.Name = "searchMaterialsComboBox";

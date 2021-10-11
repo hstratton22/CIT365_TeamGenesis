@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MegaDesk_Stratton
+﻿namespace MegaDesk_Stratton
 {
     /// <summary>
     /// desk class 
@@ -17,7 +11,7 @@ namespace MegaDesk_Stratton
         private const int MaxWidth = 96;
         private const int MinDepth = 12;
         private const int MaxDepth = 48;
-        
+
         private int _width;
         private int _depth;
         public DesktopMaterial desktopMaterial { get; set; }
@@ -25,21 +19,26 @@ namespace MegaDesk_Stratton
         public int GetMaxWidth() { return MaxWidth; }
         public int GetMinDepth() { return MinDepth; }
         public int GetMaxDepth() { return MaxDepth; }
-        public int Width {
+        public int Width
+        {
             get { return _width; }
-            set {
+            set
+            {
                 if (ValidatedWidth(value))
                 {
                     _width = value;
                 }
             }
         }
-        public int Depth { get { return _depth; }
+        public int Depth
+        {
+            get { return _depth; }
             set
             {
                 if (ValidatedDepth(value))
                 { _depth = value; }
-            } }
+            }
+        }
         public int Area
         {
             get { return _width * _depth; }
@@ -47,7 +46,7 @@ namespace MegaDesk_Stratton
         public bool ValidatedWidth(int widthInput) { if (widthInput >= MinWidth && widthInput <= MaxWidth) return true; else return false; }
 
         public bool ValidatedDepth(int depthInput) { if (depthInput >= MinDepth && depthInput <= MaxDepth) return true; else return false; }
-        
+
         public int DrawerCount { get; set; }
 
 
@@ -58,7 +57,7 @@ namespace MegaDesk_Stratton
         public override string ToString()
         {
             //return ("Width: " + this.Width.ToString() +  ", Depth: " + this.Depth.ToString() + ", Material: " + this.desktopMaterial.ToString());
-                //base.ToString(); // + "width: " + width + "\n" + " depth: "+ depth;
+            //base.ToString(); // + "width: " + width + "\n" + " depth: "+ depth;
 
             return string.Format("Width: {0}, Depth: {1}, Material: {2}", Width, Depth, desktopMaterial);
         }

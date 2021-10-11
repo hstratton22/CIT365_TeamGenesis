@@ -15,6 +15,8 @@ namespace MegaDesk_Stratton
         public SearchQuotes()
         {
             InitializeComponent();
+            //populate dropdownlist with enum values
+            searchMaterialsComboBox.DataSource = Enum.GetValues(typeof(DesktopMaterial));
         }
 
         private void searchQuotesClose_Click(object sender, EventArgs e)
