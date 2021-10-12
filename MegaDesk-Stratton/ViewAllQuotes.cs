@@ -68,7 +68,8 @@ namespace MegaDesk_Stratton
         /// <param name="e"></param>
         
         private void ViewAllQuotes_Load(object sender, EventArgs e)
-        {            
+        {
+            
             ListQuotes();
 
         }
