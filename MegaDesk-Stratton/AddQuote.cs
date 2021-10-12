@@ -8,8 +8,8 @@ using Newtonsoft.Json;
 namespace MegaDesk_Stratton
 {
     /// <summary>
-    /// AddQuote Form including constructors and methods
-    /// collect and submit input for new DeskQuote
+    /// AddQuote Form including constructor and methods
+    /// purpose: collect and submit input for new DeskQuote
     /// </summary>
     public partial class AddQuote : Form
     {
@@ -39,7 +39,10 @@ namespace MegaDesk_Stratton
 
         }
         /// <summary>
-        /// calls createDeskQuote() and then passes _newQuote to next form for view
+        /// calls createDeskQuote()
+        /// AddQuoteToList()
+        /// SaveToJsonFile()
+        /// passes _newQuote to next form for view
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -74,11 +77,18 @@ namespace MegaDesk_Stratton
             _newQuote.Desk= _newDesk;
            
         }
+        /// <summary>
+        /// adds _newQuote with values to List AllQuotes 
+        /// </summary>
         private void AddQuoteToList()
         {
             Program._globals.AllQuotes.Add(_newQuote);
             
         }
+        /// <summary>
+        /// checks for existing File, Serializes List, writes to File
+        /// try/catch for errors
+        /// </summary>
         private void SaveToJsonFile()
         {
             if (File.Exists(JsonAllQuotesFile))
@@ -100,7 +110,10 @@ namespace MegaDesk_Stratton
                 Console.WriteLine(@"Error: Could not find JSON File");
             }
 
-        }
+        
+        }/// <summary>
+        /// passes _newQuote to DisplayQuote for viewing
+        /// </summary>
 
         private void DisplayQuote()
         {

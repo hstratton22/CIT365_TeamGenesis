@@ -56,9 +56,6 @@
         /// <returns></returns>
         public override string ToString()
         {
-            //return ("Width: " + this.Width.ToString() +  ", Depth: " + this.Depth.ToString() + ", Material: " + this.desktopMaterial.ToString());
-            //base.ToString(); // + "width: " + width + "\n" + " depth: "+ depth;
-
             return string.Format("Width: {0}, Depth: {1}, Material: {2}", Width, Depth, desktopMaterial);
         }
 

@@ -10,24 +10,15 @@ namespace MegaDesk_Stratton
 /// </summary>
     public class DeskQuote
     {
-       //private string custName;
         private int _rush;
         private int[,] rushShipping;
-        //private int quote;
         private const int BaseCost = 200;
         private const int PerDrawer = 50;
         private const int OversizeSurface = 1;
         private const int OversizeLowNum = 1000;
         private const int OversizeHighNum = 2000;
-        //private DateTime date;// = DateTime.Now;
-        //private Desk _desk;//readonly
-        //private int _cost;
-        
-
-        
+               
         public string CustomerName { get; set; }
-        //public int Rush { get; set; }
-        //public DateTime Date { get; set; }
         public String date { get; set; }
         public int RushDays { get; set; }
         public Desk Desk { get; set; }
