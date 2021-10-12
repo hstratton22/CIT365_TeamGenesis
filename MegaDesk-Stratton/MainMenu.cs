@@ -64,5 +64,10 @@ namespace MegaDesk_Stratton
         {
             System.Windows.Forms.Application.Exit();//this.Close();
         }
+
+        private void deskImageMenu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

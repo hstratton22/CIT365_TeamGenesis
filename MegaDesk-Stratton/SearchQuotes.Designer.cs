@@ -39,9 +39,10 @@ namespace MegaDesk_Stratton
             // 
             // searchQuotesClose
             // 
-            this.searchQuotesClose.Location = new System.Drawing.Point(713, 415);
+            this.searchQuotesClose.Location = new System.Drawing.Point(1426, 798);
+            this.searchQuotesClose.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.searchQuotesClose.Name = "searchQuotesClose";
-            this.searchQuotesClose.Size = new System.Drawing.Size(75, 23);
+            this.searchQuotesClose.Size = new System.Drawing.Size(150, 44);
             this.searchQuotesClose.TabIndex = 0;
             this.searchQuotesClose.Text = "Close";
             this.searchQuotesClose.UseVisualStyleBackColor = true;
@@ -50,10 +51,12 @@ namespace MegaDesk_Stratton
             // searchLbl
             // 
             this.searchLbl.AutoSize = true;
-            this.searchLbl.Font = new System.Drawing.Font("Ink Free", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchLbl.Location = new System.Drawing.Point(228, 39);
+            this.searchLbl.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.searchLbl.Location = new System.Drawing.Point(456, 75);
+            this.searchLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.searchLbl.Name = "searchLbl";
-            this.searchLbl.Size = new System.Drawing.Size(194, 23);
+            this.searchLbl.Size = new System.Drawing.Size(342, 50);
             this.searchLbl.TabIndex = 1;
             this.searchLbl.Text = "Search By Material: ";
             this.searchLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -63,9 +66,10 @@ namespace MegaDesk_Stratton
             this.searchMaterialsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.searchMaterialsComboBox.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchMaterialsComboBox.FormattingEnabled = true;
-            this.searchMaterialsComboBox.Location = new System.Drawing.Point(452, 38);
+            this.searchMaterialsComboBox.Location = new System.Drawing.Point(904, 73);
+            this.searchMaterialsComboBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.searchMaterialsComboBox.Name = "searchMaterialsComboBox";
-            this.searchMaterialsComboBox.Size = new System.Drawing.Size(121, 28);
+            this.searchMaterialsComboBox.Size = new System.Drawing.Size(238, 47);
             this.searchMaterialsComboBox.TabIndex = 1;
             this.searchMaterialsComboBox.SelectedIndexChanged += new System.EventHandler(this.searchMaterialsComboBox_SelectedIndexChanged);
             // 
@@ -81,9 +85,11 @@ namespace MegaDesk_Stratton
             this.searchGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.searchGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.searchGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.searchGrid.Location = new System.Drawing.Point(12, 106);
+            this.searchGrid.Location = new System.Drawing.Point(24, 204);
+            this.searchGrid.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.searchGrid.Name = "searchGrid";
             this.searchGrid.RowHeadersVisible = false;
+            this.searchGrid.RowHeadersWidth = 82;
             this.searchGrid.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.searchGrid.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.AntiqueWhite;
             this.searchGrid.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -92,19 +98,20 @@ namespace MegaDesk_Stratton
             this.searchGrid.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(1);
             this.searchGrid.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.searchGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.searchGrid.Size = new System.Drawing.Size(776, 274);
+            this.searchGrid.Size = new System.Drawing.Size(1552, 527);
             this.searchGrid.TabIndex = 3;
             // 
             // SearchQuotes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MegaDesk_Stratton.Properties.Resources.woodgrain_texture_background;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1600, 865);
             this.Controls.Add(this.searchGrid);
             this.Controls.Add(this.searchMaterialsComboBox);
             this.Controls.Add(this.searchLbl);
             this.Controls.Add(this.searchQuotesClose);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SearchQuotes";
