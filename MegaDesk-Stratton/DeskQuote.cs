@@ -132,11 +132,16 @@ namespace MegaDesk_Stratton
                "name:" + CustomerName;
         }
 
+        /// <summary>
+        /// Opens and Reads the rushorder Price file, then returns it as a 2d Array
+        /// </summary>
+        /// <returns></returns>
+
         public int[,] GetRushOrder()
         {
             try
             {
-                string[] vs = File.ReadAllLines("Resources\\rushOrderPrices.txt");
+                string[] vs = File.ReadAllLines(@"Resources\rushOrderPrices.txt");
                 int[] rushPrices = Array.ConvertAll(vs, item => int.Parse(item));
                 rushShipping = new int[3, 3];
                 int index = 0;
