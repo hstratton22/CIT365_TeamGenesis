@@ -1,4 +1,4 @@
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -48,8 +48,8 @@ namespace MegaDesk_TeamGenesis
         /// for the desktop material name that was passed in. The resulting rows are dispalyed in a datagrid Object
         /// </summary>
         /// <param name="material"></param>
-
-       private void FindQuotes(DesktopMaterial material)
+        
+        private void FindQuotes(DesktopMaterial material)
         {
             try
             {
@@ -59,8 +59,8 @@ namespace MegaDesk_TeamGenesis
                 searchGrid.DataSource = searchResults;
                 searchGrid.AutoResizeColumns();
                 searchGrid.RowHeadersVisible = false;
-                searchGrid.BackgroundColor = Color.AntiqueWhite;
-                searchGrid.GridColor = Color.AntiqueWhite;
+                searchGrid.BackgroundColor = Color.White;
+                searchGrid.GridColor = Color.LightGray;
             } 
             catch(FileNotFoundException)
             {
