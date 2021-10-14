@@ -1,5 +1,5 @@
 ﻿
-namespace MegaDesk_Stratton
+namespace MegaDesk_TeamGenesis
 {
     partial class MainMenu
     {

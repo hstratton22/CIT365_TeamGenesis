@@ -5,7 +5,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-namespace MegaDesk_Stratton
+namespace MegaDesk_TeamGenesis
 {
     public partial class SearchQuotes : Form
     {

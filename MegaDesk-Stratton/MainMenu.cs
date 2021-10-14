@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace MegaDesk_Stratton
+namespace MegaDesk_TeamGenesis
 {/// <summary>
 /// by Heather Stratton
 /// </summary>

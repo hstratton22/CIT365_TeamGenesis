@@ -1,4 +1,4 @@
-﻿namespace MegaDesk_Stratton
+﻿namespace MegaDesk_TeamGenesis
 {
     class ComboboxItem
     {
