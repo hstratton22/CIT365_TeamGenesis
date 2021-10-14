@@ -51,16 +51,22 @@ namespace MegaDesk_Stratton
         
         private void FindQuotes(DesktopMaterial material)
         {
-            
-            //Error Checking Needed
-            var jsonData = File.ReadAllText(JsonQuotes);
-            var searchData = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
-            List<DeskQuote> searchResults = searchData.FindAll(FindMaterial);
-            searchGrid.DataSource = searchResults;
-            searchGrid.AutoResizeColumns();
-            searchGrid.RowHeadersVisible = false;
-            searchGrid.BackgroundColor = Color.AntiqueWhite;
-            searchGrid.GridColor = Color.AntiqueWhite;
+            try
+            {
+                var jsonData = File.ReadAllText(JsonQuotes);
+                var searchData = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
+                List<DeskQuote> searchResults = searchData.FindAll(FindMaterial);
+                searchGrid.DataSource = searchResults;
+                searchGrid.AutoResizeColumns();
+                searchGrid.RowHeadersVisible = false;
+                searchGrid.BackgroundColor = Color.AntiqueWhite;
+                searchGrid.GridColor = Color.AntiqueWhite;
+            } 
+            catch(FileNotFoundException)
+            {
+                MessageBox.Show("File Not Found");
+            }
+
         }
 
         /// <summary>
