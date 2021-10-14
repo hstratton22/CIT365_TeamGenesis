@@ -48,37 +48,44 @@ namespace MegaDesk_Stratton
         /// for the desktop material name that was passed in. The resulting rows are dispalyed in a datagrid Object
         /// </summary>
         /// <param name="material"></param>
-        
+
         private void FindQuotes(DesktopMaterial material)
         {
-            
-            //Error Checking Needed
-            var jsonData = File.ReadAllText(JsonQuotes);
-            var searchData = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
-            List<DeskQuote> searchResults = searchData.FindAll(FindMaterial);
-            searchGrid.DataSource = searchResults;
-            searchGrid.AutoResizeColumns();
-            searchGrid.RowHeadersVisible = false;
-            searchGrid.BackgroundColor = Color.AntiqueWhite;
-            searchGrid.GridColor = Color.AntiqueWhite;
+            try
+            {
+                var jsonData = File.ReadAllText(JsonQuotes);
+                var searchData = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
+                List<DeskQuote> searchResults = searchData.FindAll(FindMaterial);
+                searchGrid.DataSource = searchResults;
+                searchGrid.AutoResizeColumns();
+                searchGrid.RowHeadersVisible = false;
+                searchGrid.BackgroundColor = Color.AntiqueWhite;
+                searchGrid.GridColor = Color.AntiqueWhite;
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("File Not Found");
+            }
+
         }
 
         /// <summary>
         /// Defines the Predicate that will search for the selected Desktop Material
         /// </summary>
         /// <param name="dk"></param>
-       
+
         private static bool FindMaterial(DeskQuote dk)
         {
             if (dk.Desk.desktopMaterial == material)
             {
                 return true;
-            }else
+            }
+            else
             {
                 return false;
             }
         }
 
-        
+
     }
 }

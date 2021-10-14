@@ -17,18 +17,18 @@ namespace MegaDesk_Stratton
         private const int OversizeSurface = 1;
         private const int OversizeLowNum = 1000;
         private const int OversizeHighNum = 2000;
-               
+
         public string CustomerName { get; set; }
         public String date { get; set; }
         public int RushDays { get; set; }
         public Desk Desk { get; set; }
-        public int Cost { 
+        public int Cost
+        {
             get
-            { 
+            {
                 return AreaTotalCost() + CalcDrawerCost() + CalcRushCost() + CalcSurfaceCost();
             }
-             }
-
+        }
 
         /// <summary>
         /// w * d of Desk, and calculates cost
@@ -45,17 +45,17 @@ namespace MegaDesk_Stratton
 
         }
         /// <summary>
-         /// calculates total cost of drawers
-         /// </summary>
-         /// <returns></returns>
+        /// calculates total cost of drawers
+        /// </summary>
+        /// <returns></returns>
         public int CalcDrawerCost()
         {
             return PerDrawer * Desk.DrawerCount;
         }
         /// <summary>
-         /// calculates total cost of rush order 
-         /// </summary>
-         /// <returns></returns>
+        /// calculates total cost of rush order 
+        /// </summary>
+        /// <returns></returns>
         public int CalcRushCost()
         {
             int result = 0;
@@ -88,9 +88,9 @@ namespace MegaDesk_Stratton
             return result;
         }
         /// <summary>
-         /// calculates surface cost using enum DesktopMaterial
-         /// </summary> 
-         /// <returns></returns>
+        /// calculates surface cost using enum DesktopMaterial
+        /// </summary> 
+        /// <returns></returns>
         public int CalcSurfaceCost()
         {
             if (Desk.desktopMaterial == DesktopMaterial.Laminate)
@@ -155,7 +155,7 @@ namespace MegaDesk_Stratton
                 }
 
             }
-            catch (Exception e)
+            catch (FileNotFoundException e)
             {
                 //change catch to something more appropriate
                 MessageBox.Show(@"File Could Not be Found" + e);
