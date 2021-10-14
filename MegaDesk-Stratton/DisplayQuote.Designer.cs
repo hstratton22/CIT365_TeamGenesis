@@ -1,5 +1,5 @@
 ﻿
-namespace MegaDesk_TeamGenesis
+namespace MegaDesk_Stratton
 {
     partial class DisplayQuote
     {
@@ -71,10 +71,9 @@ namespace MegaDesk_TeamGenesis
             // 
             // displayClose
             // 
-            this.displayClose.Location = new System.Drawing.Point(1426, 798);
-            this.displayClose.Margin = new System.Windows.Forms.Padding(6);
+            this.displayClose.Location = new System.Drawing.Point(713, 415);
             this.displayClose.Name = "displayClose";
-            this.displayClose.Size = new System.Drawing.Size(150, 44);
+            this.displayClose.Size = new System.Drawing.Size(75, 23);
             this.displayClose.TabIndex = 0;
             this.displayClose.Text = "Close";
             this.displayClose.UseVisualStyleBackColor = true;
@@ -85,10 +84,9 @@ namespace MegaDesk_TeamGenesis
             this.quoteForLbl.AutoSize = true;
             this.quoteForLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quoteForLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.quoteForLbl.Location = new System.Drawing.Point(384, 60);
-            this.quoteForLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.quoteForLbl.Location = new System.Drawing.Point(195, 31);
             this.quoteForLbl.Name = "quoteForLbl";
-            this.quoteForLbl.Size = new System.Drawing.Size(167, 45);
+            this.quoteForLbl.Size = new System.Drawing.Size(81, 21);
             this.quoteForLbl.TabIndex = 1;
             this.quoteForLbl.Text = "Quote for ";
             // 
@@ -97,33 +95,31 @@ namespace MegaDesk_TeamGenesis
             this.displayCustNameBox.AutoSize = true;
             this.displayCustNameBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayCustNameBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayCustNameBox.Location = new System.Drawing.Point(538, 60);
-            this.displayCustNameBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayCustNameBox.Location = new System.Drawing.Point(269, 31);
             this.displayCustNameBox.Name = "displayCustNameBox";
-            this.displayCustNameBox.Size = new System.Drawing.Size(241, 45);
+            this.displayCustNameBox.Size = new System.Drawing.Size(118, 21);
             this.displayCustNameBox.TabIndex = 2;
             this.displayCustNameBox.Text = "customer name";
             // 
             // displayQuoteDateBox
             // 
             this.displayQuoteDateBox.AutoSize = true;
-            this.displayQuoteDateBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDateBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteDateBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteDateBox.Location = new System.Drawing.Point(390, 117);
-            this.displayQuoteDateBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteDateBox.Location = new System.Drawing.Point(253, 63);
             this.displayQuoteDateBox.Name = "displayQuoteDateBox";
-            this.displayQuoteDateBox.Size = new System.Drawing.Size(83, 45);
+            this.displayQuoteDateBox.Size = new System.Drawing.Size(34, 17);
             this.displayQuoteDateBox.TabIndex = 3;
             this.displayQuoteDateBox.Text = "date";
+            this.displayQuoteDateBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // displayQuoteWidthLbl
             // 
             this.displayQuoteWidthLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteWidthLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteWidthLbl.Location = new System.Drawing.Point(79, 221);
-            this.displayQuoteWidthLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteWidthLbl.Location = new System.Drawing.Point(50, 109);
             this.displayQuoteWidthLbl.Name = "displayQuoteWidthLbl";
-            this.displayQuoteWidthLbl.Size = new System.Drawing.Size(200, 38);
+            this.displayQuoteWidthLbl.Size = new System.Drawing.Size(100, 20);
             this.displayQuoteWidthLbl.TabIndex = 4;
             this.displayQuoteWidthLbl.Text = "Width: ";
             // 
@@ -131,10 +127,9 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteWidthBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteWidthBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteWidthBox.Location = new System.Drawing.Point(262, 225);
-            this.displayQuoteWidthBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteWidthBox.Location = new System.Drawing.Point(146, 108);
             this.displayQuoteWidthBox.Name = "displayQuoteWidthBox";
-            this.displayQuoteWidthBox.Size = new System.Drawing.Size(200, 37);
+            this.displayQuoteWidthBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteWidthBox.TabIndex = 5;
             this.displayQuoteWidthBox.Text = "width";
             this.displayQuoteWidthBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -143,10 +138,9 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteDepthLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteDepthLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteDepthLbl.Location = new System.Drawing.Point(80, 277);
-            this.displayQuoteDepthLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteDepthLbl.Location = new System.Drawing.Point(50, 141);
             this.displayQuoteDepthLbl.Name = "displayQuoteDepthLbl";
-            this.displayQuoteDepthLbl.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteDepthLbl.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteDepthLbl.TabIndex = 6;
             this.displayQuoteDepthLbl.Text = "Depth: ";
             // 
@@ -154,10 +148,9 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteDepthBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteDepthBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteDepthBox.Location = new System.Drawing.Point(273, 277);
-            this.displayQuoteDepthBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteDepthBox.Location = new System.Drawing.Point(146, 140);
             this.displayQuoteDepthBox.Name = "displayQuoteDepthBox";
-            this.displayQuoteDepthBox.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteDepthBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteDepthBox.TabIndex = 7;
             this.displayQuoteDepthBox.Text = "depth";
             this.displayQuoteDepthBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -166,10 +159,9 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteAreaLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteAreaLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteAreaLbl.Location = new System.Drawing.Point(628, 356);
-            this.displayQuoteAreaLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteAreaLbl.Location = new System.Drawing.Point(314, 185);
             this.displayQuoteAreaLbl.Name = "displayQuoteAreaLbl";
-            this.displayQuoteAreaLbl.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteAreaLbl.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteAreaLbl.TabIndex = 8;
             this.displayQuoteAreaLbl.Text = "Total Area: ";
             // 
@@ -177,10 +169,9 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteAreaBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteAreaBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteAreaBox.Location = new System.Drawing.Point(872, 354);
-            this.displayQuoteAreaBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteAreaBox.Location = new System.Drawing.Point(436, 184);
             this.displayQuoteAreaBox.Name = "displayQuoteAreaBox";
-            this.displayQuoteAreaBox.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteAreaBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteAreaBox.TabIndex = 9;
             this.displayQuoteAreaBox.Text = "Total Area";
             this.displayQuoteAreaBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -189,10 +180,9 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteAreaCostLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteAreaCostLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteAreaCostLbl.Location = new System.Drawing.Point(636, 430);
-            this.displayQuoteAreaCostLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteAreaCostLbl.Location = new System.Drawing.Point(318, 231);
             this.displayQuoteAreaCostLbl.Name = "displayQuoteAreaCostLbl";
-            this.displayQuoteAreaCostLbl.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteAreaCostLbl.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteAreaCostLbl.TabIndex = 10;
             this.displayQuoteAreaCostLbl.Text = "Area Cost: ";
             // 
@@ -200,33 +190,30 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteAreaCostBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteAreaCostBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteAreaCostBox.Location = new System.Drawing.Point(870, 429);
-            this.displayQuoteAreaCostBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteAreaCostBox.Location = new System.Drawing.Point(436, 230);
             this.displayQuoteAreaCostBox.Name = "displayQuoteAreaCostBox";
-            this.displayQuoteAreaCostBox.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteAreaCostBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteAreaCostBox.TabIndex = 11;
             this.displayQuoteAreaCostBox.Text = "Area Cost";
             this.displayQuoteAreaCostBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // displayQuoteDrawerCountLbl
             // 
-            this.displayQuoteDrawerCountLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDrawerCountLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteDrawerCountLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteDrawerCountLbl.Location = new System.Drawing.Point(88, 494);
-            this.displayQuoteDrawerCountLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteDrawerCountLbl.Location = new System.Drawing.Point(50, 254);
             this.displayQuoteDrawerCountLbl.Name = "displayQuoteDrawerCountLbl";
-            this.displayQuoteDrawerCountLbl.Size = new System.Drawing.Size(242, 44);
+            this.displayQuoteDrawerCountLbl.Size = new System.Drawing.Size(121, 23);
             this.displayQuoteDrawerCountLbl.TabIndex = 12;
             this.displayQuoteDrawerCountLbl.Text = "Drawer Count: ";
             // 
             // displayQuoteDrawerCntBox
             // 
-            this.displayQuoteDrawerCntBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDrawerCntBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteDrawerCntBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteDrawerCntBox.Location = new System.Drawing.Point(292, 490);
-            this.displayQuoteDrawerCntBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteDrawerCntBox.Location = new System.Drawing.Point(156, 253);
             this.displayQuoteDrawerCntBox.Name = "displayQuoteDrawerCntBox";
-            this.displayQuoteDrawerCntBox.Size = new System.Drawing.Size(180, 44);
+            this.displayQuoteDrawerCntBox.Size = new System.Drawing.Size(90, 23);
             this.displayQuoteDrawerCntBox.TabIndex = 13;
             this.displayQuoteDrawerCntBox.Text = "drawers";
             this.displayQuoteDrawerCntBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -235,10 +222,9 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteDrawerCostLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteDrawerCostLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteDrawerCostLbl.Location = new System.Drawing.Point(628, 569);
-            this.displayQuoteDrawerCostLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteDrawerCostLbl.Location = new System.Drawing.Point(314, 296);
             this.displayQuoteDrawerCostLbl.Name = "displayQuoteDrawerCostLbl";
-            this.displayQuoteDrawerCostLbl.Size = new System.Drawing.Size(212, 44);
+            this.displayQuoteDrawerCostLbl.Size = new System.Drawing.Size(106, 23);
             this.displayQuoteDrawerCostLbl.TabIndex = 14;
             this.displayQuoteDrawerCostLbl.Text = "Drawer Cost: ";
             // 
@@ -246,10 +232,9 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteDrawerCostBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteDrawerCostBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteDrawerCostBox.Location = new System.Drawing.Point(872, 567);
-            this.displayQuoteDrawerCostBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteDrawerCostBox.Location = new System.Drawing.Point(436, 295);
             this.displayQuoteDrawerCostBox.Name = "displayQuoteDrawerCostBox";
-            this.displayQuoteDrawerCostBox.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteDrawerCostBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteDrawerCostBox.TabIndex = 15;
             this.displayQuoteDrawerCostBox.Text = "Cost";
             this.displayQuoteDrawerCostBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -258,10 +243,9 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteMatLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteMatLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteMatLbl.Location = new System.Drawing.Point(88, 654);
-            this.displayQuoteMatLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteMatLbl.Location = new System.Drawing.Point(44, 332);
             this.displayQuoteMatLbl.Name = "displayQuoteMatLbl";
-            this.displayQuoteMatLbl.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteMatLbl.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteMatLbl.TabIndex = 16;
             this.displayQuoteMatLbl.Text = "Material: ";
             // 
@@ -269,56 +253,51 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteMatBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteMatBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteMatBox.Location = new System.Drawing.Point(272, 652);
-            this.displayQuoteMatBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteMatBox.Location = new System.Drawing.Point(136, 331);
             this.displayQuoteMatBox.Name = "displayQuoteMatBox";
-            this.displayQuoteMatBox.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteMatBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteMatBox.TabIndex = 17;
             this.displayQuoteMatBox.Text = "surface";
             this.displayQuoteMatBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // displayQuoteMatCostLbl
             // 
-            this.displayQuoteMatCostLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteMatCostLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteMatCostLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteMatCostLbl.Location = new System.Drawing.Point(628, 710);
-            this.displayQuoteMatCostLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteMatCostLbl.Location = new System.Drawing.Point(310, 374);
             this.displayQuoteMatCostLbl.Name = "displayQuoteMatCostLbl";
-            this.displayQuoteMatCostLbl.Size = new System.Drawing.Size(238, 44);
+            this.displayQuoteMatCostLbl.Size = new System.Drawing.Size(119, 23);
             this.displayQuoteMatCostLbl.TabIndex = 18;
             this.displayQuoteMatCostLbl.Text = "Material Cost: ";
             // 
             // displayQuoteMatCostBox
             // 
-            this.displayQuoteMatCostBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteMatCostBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteMatCostBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteMatCostBox.Location = new System.Drawing.Point(876, 710);
-            this.displayQuoteMatCostBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteMatCostBox.Location = new System.Drawing.Point(436, 373);
             this.displayQuoteMatCostBox.Name = "displayQuoteMatCostBox";
-            this.displayQuoteMatCostBox.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteMatCostBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteMatCostBox.TabIndex = 19;
             this.displayQuoteMatCostBox.Text = "Cost";
             this.displayQuoteMatCostBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // displayQuoteRushLbl
             // 
-            this.displayQuoteRushLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteRushLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteRushLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteRushLbl.Location = new System.Drawing.Point(88, 794);
-            this.displayQuoteRushLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteRushLbl.Location = new System.Drawing.Point(44, 404);
             this.displayQuoteRushLbl.Name = "displayQuoteRushLbl";
-            this.displayQuoteRushLbl.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteRushLbl.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteRushLbl.TabIndex = 20;
             this.displayQuoteRushLbl.Text = "Rush (days): ";
             // 
             // displayQuoteRushBox
             // 
-            this.displayQuoteRushBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteRushBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteRushBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteRushBox.Location = new System.Drawing.Point(342, 792);
-            this.displayQuoteRushBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteRushBox.Location = new System.Drawing.Point(171, 403);
             this.displayQuoteRushBox.Name = "displayQuoteRushBox";
-            this.displayQuoteRushBox.Size = new System.Drawing.Size(130, 46);
+            this.displayQuoteRushBox.Size = new System.Drawing.Size(65, 24);
             this.displayQuoteRushBox.TabIndex = 21;
             this.displayQuoteRushBox.Text = "rush";
             this.displayQuoteRushBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -326,23 +305,21 @@ namespace MegaDesk_TeamGenesis
             // displayQuoteRushCostLbl
             // 
             this.displayQuoteRushCostLbl.AutoSize = true;
-            this.displayQuoteRushCostLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteRushCostLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteRushCostLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteRushCostLbl.Location = new System.Drawing.Point(628, 867);
-            this.displayQuoteRushCostLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteRushCostLbl.Location = new System.Drawing.Point(314, 451);
             this.displayQuoteRushCostLbl.Name = "displayQuoteRushCostLbl";
-            this.displayQuoteRushCostLbl.Size = new System.Drawing.Size(184, 37);
+            this.displayQuoteRushCostLbl.Size = new System.Drawing.Size(87, 21);
             this.displayQuoteRushCostLbl.TabIndex = 22;
             this.displayQuoteRushCostLbl.Text = "Rush Cost: ";
             // 
             // displayQuoteRushCostBox
             // 
-            this.displayQuoteRushCostBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteRushCostBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayQuoteRushCostBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteRushCostBox.Location = new System.Drawing.Point(872, 862);
-            this.displayQuoteRushCostBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteRushCostBox.Location = new System.Drawing.Point(436, 451);
             this.displayQuoteRushCostBox.Name = "displayQuoteRushCostBox";
-            this.displayQuoteRushCostBox.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteRushCostBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteRushCostBox.TabIndex = 23;
             this.displayQuoteRushCostBox.Text = "Cost";
             this.displayQuoteRushCostBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -350,22 +327,18 @@ namespace MegaDesk_TeamGenesis
             // displayQuoteTotalCostLbl
             // 
             this.displayQuoteTotalCostLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteTotalCostLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteTotalCostLbl.Location = new System.Drawing.Point(636, 1019);
-            this.displayQuoteTotalCostLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteTotalCostLbl.Location = new System.Drawing.Point(318, 530);
             this.displayQuoteTotalCostLbl.Name = "displayQuoteTotalCostLbl";
-            this.displayQuoteTotalCostLbl.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteTotalCostLbl.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteTotalCostLbl.TabIndex = 24;
             this.displayQuoteTotalCostLbl.Text = "Total Cost: ";
             // 
             // displayQuoteTotalCostBox
             // 
             this.displayQuoteTotalCostBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteTotalCostBox.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteTotalCostBox.Location = new System.Drawing.Point(876, 1015);
-            this.displayQuoteTotalCostBox.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteTotalCostBox.Location = new System.Drawing.Point(438, 528);
             this.displayQuoteTotalCostBox.Name = "displayQuoteTotalCostBox";
-            this.displayQuoteTotalCostBox.Size = new System.Drawing.Size(200, 44);
+            this.displayQuoteTotalCostBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteTotalCostBox.TabIndex = 25;
             this.displayQuoteTotalCostBox.Text = "Cost";
             this.displayQuoteTotalCostBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -374,11 +347,9 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteDollarLbl.AutoSize = true;
             this.displayQuoteDollarLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteDollarLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteDollarLbl.Location = new System.Drawing.Point(848, 1015);
-            this.displayQuoteDollarLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteDollarLbl.Location = new System.Drawing.Point(424, 528);
             this.displayQuoteDollarLbl.Name = "displayQuoteDollarLbl";
-            this.displayQuoteDollarLbl.Size = new System.Drawing.Size(35, 37);
+            this.displayQuoteDollarLbl.Size = new System.Drawing.Size(18, 20);
             this.displayQuoteDollarLbl.TabIndex = 26;
             this.displayQuoteDollarLbl.Text = "$";
             this.displayQuoteDollarLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -387,58 +358,53 @@ namespace MegaDesk_TeamGenesis
             // 
             this.displayQuoteHLine1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.displayQuoteHLine1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteHLine1.Location = new System.Drawing.Point(88, 338);
-            this.displayQuoteHLine1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteHLine1.Location = new System.Drawing.Point(44, 176);
             this.displayQuoteHLine1.Name = "displayQuoteHLine1";
-            this.displayQuoteHLine1.Size = new System.Drawing.Size(974, 2);
+            this.displayQuoteHLine1.Size = new System.Drawing.Size(488, 2);
             this.displayQuoteHLine1.TabIndex = 27;
             // 
             // displayQuoteHLine4
             // 
             this.displayQuoteHLine4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.displayQuoteHLine4.Location = new System.Drawing.Point(96, 702);
-            this.displayQuoteHLine4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteHLine4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteHLine4.Location = new System.Drawing.Point(48, 365);
             this.displayQuoteHLine4.Name = "displayQuoteHLine4";
-            this.displayQuoteHLine4.Size = new System.Drawing.Size(974, 2);
+            this.displayQuoteHLine4.Size = new System.Drawing.Size(488, 2);
             this.displayQuoteHLine4.TabIndex = 28;
             // 
             // displayQuoteHLine3
             // 
             this.displayQuoteHLine3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.displayQuoteHLine3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteHLine3.Location = new System.Drawing.Point(88, 550);
-            this.displayQuoteHLine3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteHLine3.Location = new System.Drawing.Point(44, 286);
             this.displayQuoteHLine3.Name = "displayQuoteHLine3";
-            this.displayQuoteHLine3.Size = new System.Drawing.Size(974, 2);
+            this.displayQuoteHLine3.Size = new System.Drawing.Size(488, 2);
             this.displayQuoteHLine3.TabIndex = 29;
             // 
             // displayQuoteHLine6
             // 
             this.displayQuoteHLine6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.displayQuoteHLine6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteHLine6.Location = new System.Drawing.Point(100, 994);
-            this.displayQuoteHLine6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteHLine6.Location = new System.Drawing.Point(50, 517);
             this.displayQuoteHLine6.Name = "displayQuoteHLine6";
-            this.displayQuoteHLine6.Size = new System.Drawing.Size(974, 2);
+            this.displayQuoteHLine6.Size = new System.Drawing.Size(488, 2);
             this.displayQuoteHLine6.TabIndex = 30;
             // 
             // displayQuoteHLine5
             // 
             this.displayQuoteHLine5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.displayQuoteHLine5.Location = new System.Drawing.Point(96, 838);
-            this.displayQuoteHLine5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteHLine5.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteHLine5.Location = new System.Drawing.Point(48, 436);
             this.displayQuoteHLine5.Name = "displayQuoteHLine5";
-            this.displayQuoteHLine5.Size = new System.Drawing.Size(974, 2);
+            this.displayQuoteHLine5.Size = new System.Drawing.Size(488, 2);
             this.displayQuoteHLine5.TabIndex = 31;
             // 
             // displayQuoteHLine2
             // 
             this.displayQuoteHLine2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.displayQuoteHLine2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.displayQuoteHLine2.Location = new System.Drawing.Point(628, 410);
-            this.displayQuoteHLine2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.displayQuoteHLine2.Location = new System.Drawing.Point(318, 218);
             this.displayQuoteHLine2.Name = "displayQuoteHLine2";
-            this.displayQuoteHLine2.Size = new System.Drawing.Size(434, 2);
+            this.displayQuoteHLine2.Size = new System.Drawing.Size(218, 2);
             this.displayQuoteHLine2.TabIndex = 32;
             // 
             // displayQuoteMenuBtn
@@ -446,10 +412,9 @@ namespace MegaDesk_TeamGenesis
             this.displayQuoteMenuBtn.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.displayQuoteMenuBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.displayQuoteMenuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteMenuBtn.Location = new System.Drawing.Point(906, 1135);
-            this.displayQuoteMenuBtn.Margin = new System.Windows.Forms.Padding(6);
+            this.displayQuoteMenuBtn.Location = new System.Drawing.Point(453, 590);
             this.displayQuoteMenuBtn.Name = "displayQuoteMenuBtn";
-            this.displayQuoteMenuBtn.Size = new System.Drawing.Size(170, 56);
+            this.displayQuoteMenuBtn.Size = new System.Drawing.Size(85, 29);
             this.displayQuoteMenuBtn.TabIndex = 33;
             this.displayQuoteMenuBtn.Text = "Menu";
             this.displayQuoteMenuBtn.UseVisualStyleBackColor = false;
@@ -460,10 +425,9 @@ namespace MegaDesk_TeamGenesis
             this.dollar1.AutoSize = true;
             this.dollar1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dollar1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.dollar1.Location = new System.Drawing.Point(848, 429);
-            this.dollar1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.dollar1.Location = new System.Drawing.Point(423, 231);
             this.dollar1.Name = "dollar1";
-            this.dollar1.Size = new System.Drawing.Size(37, 45);
+            this.dollar1.Size = new System.Drawing.Size(19, 21);
             this.dollar1.TabIndex = 34;
             this.dollar1.Text = "$";
             this.dollar1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -473,10 +437,9 @@ namespace MegaDesk_TeamGenesis
             this.dollar2.AutoSize = true;
             this.dollar2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dollar2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.dollar2.Location = new System.Drawing.Point(848, 567);
-            this.dollar2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.dollar2.Location = new System.Drawing.Point(423, 295);
             this.dollar2.Name = "dollar2";
-            this.dollar2.Size = new System.Drawing.Size(37, 45);
+            this.dollar2.Size = new System.Drawing.Size(19, 21);
             this.dollar2.TabIndex = 35;
             this.dollar2.Text = "$";
             this.dollar2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -486,10 +449,9 @@ namespace MegaDesk_TeamGenesis
             this.dollar3.AutoSize = true;
             this.dollar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dollar3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.dollar3.Location = new System.Drawing.Point(848, 710);
-            this.dollar3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.dollar3.Location = new System.Drawing.Point(425, 375);
             this.dollar3.Name = "dollar3";
-            this.dollar3.Size = new System.Drawing.Size(35, 37);
+            this.dollar3.Size = new System.Drawing.Size(18, 20);
             this.dollar3.TabIndex = 36;
             this.dollar3.Text = "$";
             this.dollar3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -497,21 +459,20 @@ namespace MegaDesk_TeamGenesis
             // dollar4
             // 
             this.dollar4.AutoSize = true;
-            this.dollar4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dollar4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dollar4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.dollar4.Location = new System.Drawing.Point(848, 862);
-            this.dollar4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.dollar4.Location = new System.Drawing.Point(424, 451);
             this.dollar4.Name = "dollar4";
-            this.dollar4.Size = new System.Drawing.Size(35, 37);
+            this.dollar4.Size = new System.Drawing.Size(19, 21);
             this.dollar4.TabIndex = 37;
             this.dollar4.Text = "$";
             this.dollar4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DisplayQuote
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1146, 1213);
+            this.ClientSize = new System.Drawing.Size(573, 631);
             this.Controls.Add(this.dollar4);
             this.Controls.Add(this.dollar3);
             this.Controls.Add(this.dollar2);
@@ -550,7 +511,6 @@ namespace MegaDesk_TeamGenesis
             this.Controls.Add(this.displayCustNameBox);
             this.Controls.Add(this.quoteForLbl);
             this.Controls.Add(this.displayClose);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DisplayQuote";

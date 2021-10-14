@@ -128,7 +128,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\desk1.jpg" />
+    <Content Include="Images\desk.png" />
+    <Content Include="Images\deskI.png" />
+    <Content Include="Images\deskIma.png" />
     <Content Include="Images\deskImage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

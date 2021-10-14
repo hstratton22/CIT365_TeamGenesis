@@ -1,5 +1,5 @@
 ﻿
-namespace MegaDesk_TeamGenesis
+namespace MegaDesk_Stratton
 {
     partial class ViewAllQuotes
     {
@@ -29,7 +29,6 @@ namespace MegaDesk_TeamGenesis
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.allQuotesClose = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -37,11 +36,9 @@ namespace MegaDesk_TeamGenesis
             // 
             // allQuotesClose
             // 
-            this.allQuotesClose.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.allQuotesClose.Location = new System.Drawing.Point(1093, 706);
-            this.allQuotesClose.Margin = new System.Windows.Forms.Padding(6);
+            this.allQuotesClose.Location = new System.Drawing.Point(531, 368);
             this.allQuotesClose.Name = "allQuotesClose";
-            this.allQuotesClose.Size = new System.Drawing.Size(150, 44);
+            this.allQuotesClose.Size = new System.Drawing.Size(75, 23);
             this.allQuotesClose.TabIndex = 0;
             this.allQuotesClose.Text = "Close";
             this.allQuotesClose.UseVisualStyleBackColor = true;
@@ -49,34 +46,23 @@ namespace MegaDesk_TeamGenesis
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGridView1.Location = new System.Drawing.Point(63, 121);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(12);
+            this.dataGridView1.Location = new System.Drawing.Point(46, 61);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(1180, 567);
+            this.dataGridView1.Size = new System.Drawing.Size(560, 263);
             this.dataGridView1.TabIndex = 1;
             // 
             // ViewAllQuotes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1304, 827);
+            this.ClientSize = new System.Drawing.Size(652, 430);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.allQuotesClose);
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ViewAllQuotes";

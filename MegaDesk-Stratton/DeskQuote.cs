@@ -2,7 +2,7 @@
 using System.IO;
 using System.Windows.Forms;
 
-namespace MegaDesk_TeamGenesis
+namespace MegaDesk_Stratton
 {/// <summary>
 /// DeskQuote class including constructors
 /// get; set;
@@ -29,6 +29,7 @@ namespace MegaDesk_TeamGenesis
                 return AreaTotalCost() + CalcDrawerCost() + CalcRushCost() + CalcSurfaceCost();
             }
         }
+
 
         /// <summary>
         /// w * d of Desk, and calculates cost
