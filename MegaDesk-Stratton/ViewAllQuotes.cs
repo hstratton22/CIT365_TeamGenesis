@@ -5,7 +5,7 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Reflection;
 
-namespace MegaDesk_TeamGenesis
+namespace MegaDesk_Stratton
 {
     /// <summary>
     /// ViewAllQuotes Form

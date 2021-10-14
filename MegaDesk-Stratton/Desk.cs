@@ -1,4 +1,6 @@
-﻿namespace MegaDesk_TeamGenesis
+﻿
+
+namespace MegaDesk_Stratton
 {
     /// <summary>
     /// desk class 

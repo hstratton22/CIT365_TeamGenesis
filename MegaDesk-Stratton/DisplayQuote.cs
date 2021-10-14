@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MegaDesk_TeamGenesis
+namespace MegaDesk_Stratton
 {/// <summary>
 /// DisplayQuote form including constructor and methods to display _deskQuote to user
 /// </summary>

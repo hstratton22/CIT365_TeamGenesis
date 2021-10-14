@@ -57,8 +57,8 @@ namespace MegaDesk_Stratton
                 var searchData = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonData);
                 List<DeskQuote> searchResults = searchData.FindAll(FindMaterial);
                 searchGrid.DataSource = searchResults;
-                searchGrid.AutoResizeColumns();
-                searchGrid.RowHeadersVisible = false;
+               searchGrid.AutoResizeColumns();
+               searchGrid.RowHeadersVisible = false;
             } 
             catch(FileNotFoundException)
             {

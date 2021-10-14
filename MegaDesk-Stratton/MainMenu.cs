@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace MegaDesk_TeamGenesis
+namespace MegaDesk_Stratton
 {/// <summary>
 /// by Heather Stratton
 /// </summary>
     public partial class MainMenu : Form
     {
-        
+
         public static Globals _globals;
         public MainMenu()
         {
-           InitializeComponent();
+            InitializeComponent();
         }
 
         private void MainMenu_Load(object sender, EventArgs e)

@@ -5,7 +5,7 @@ using System.IO;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 
-namespace MegaDesk_TeamGenesis
+namespace MegaDesk_Stratton
 {
     /// <summary>
     /// AddQuote Form including constructor and methods

@@ -29,7 +29,6 @@ namespace MegaDesk_Stratton
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.searchQuotesClose = new System.Windows.Forms.Button();
             this.searchLbl = new System.Windows.Forms.Label();
             this.searchMaterialsComboBox = new System.Windows.Forms.ComboBox();
@@ -73,32 +72,15 @@ namespace MegaDesk_Stratton
             // 
             // searchGrid
             // 
-            this.searchGrid.AllowUserToAddRows = false;
-            this.searchGrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Ivory;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(1);
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.searchGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.searchGrid.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.searchGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.searchGrid.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.searchGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.searchGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.searchGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.searchGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.searchGrid.Location = new System.Drawing.Point(35, 96);
-            this.searchGrid.Margin = new System.Windows.Forms.Padding(6);
+            this.searchGrid.Location = new System.Drawing.Point(130, 97);
             this.searchGrid.Name = "searchGrid";
-            this.searchGrid.RowHeadersVisible = false;
-            this.searchGrid.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.searchGrid.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.searchGrid.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchGrid.RowTemplate.DefaultCellStyle.Format = "d";
-            this.searchGrid.RowTemplate.DefaultCellStyle.NullValue = null;
-            this.searchGrid.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(1);
-            this.searchGrid.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.searchGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.searchGrid.Size = new System.Drawing.Size(727, 274);
-            this.searchGrid.TabIndex = 3;
+            this.searchGrid.Size = new System.Drawing.Size(540, 256);
+            this.searchGrid.TabIndex = 2;
             // 
             // SearchQuotes
             // 
