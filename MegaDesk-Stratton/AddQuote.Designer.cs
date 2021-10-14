@@ -57,10 +57,10 @@ namespace MegaDesk_Stratton
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(423, 378);
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(414, 366);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 32);
             this.button1.TabIndex = 8;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
@@ -68,7 +68,8 @@ namespace MegaDesk_Stratton
             // 
             // custNameLbl
             // 
-            this.custNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.custNameLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.custNameLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.custNameLbl.Location = new System.Drawing.Point(22, 24);
             this.custNameLbl.Name = "custNameLbl";
             this.custNameLbl.Size = new System.Drawing.Size(186, 20);
@@ -77,16 +78,18 @@ namespace MegaDesk_Stratton
             // 
             // custNameInput
             // 
-            this.custNameInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.custNameInput.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.custNameInput.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.custNameInput.Location = new System.Drawing.Point(209, 18);
             this.custNameInput.Name = "custNameInput";
-            this.custNameInput.Size = new System.Drawing.Size(150, 26);
+            this.custNameInput.Size = new System.Drawing.Size(150, 29);
             this.custNameInput.TabIndex = 1;
             this.custNameInput.Validating += new System.ComponentModel.CancelEventHandler(this.custNameInput_Validating);
             // 
             // deskWidthLbl
             // 
-            this.deskWidthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deskWidthLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deskWidthLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.deskWidthLbl.Location = new System.Drawing.Point(22, 62);
             this.deskWidthLbl.Name = "deskWidthLbl";
             this.deskWidthLbl.Size = new System.Drawing.Size(186, 20);
@@ -95,16 +98,18 @@ namespace MegaDesk_Stratton
             // 
             // deskWidthInput
             // 
-            this.deskWidthInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deskWidthInput.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deskWidthInput.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.deskWidthInput.Location = new System.Drawing.Point(209, 59);
             this.deskWidthInput.Name = "deskWidthInput";
-            this.deskWidthInput.Size = new System.Drawing.Size(150, 26);
+            this.deskWidthInput.Size = new System.Drawing.Size(150, 29);
             this.deskWidthInput.TabIndex = 2;
             this.deskWidthInput.Validating += new System.ComponentModel.CancelEventHandler(this.deskWidthInput_Validating);
             // 
             // deskDepthLbl
             // 
-            this.deskDepthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deskDepthLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deskDepthLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.deskDepthLbl.Location = new System.Drawing.Point(22, 107);
             this.deskDepthLbl.Name = "deskDepthLbl";
             this.deskDepthLbl.Size = new System.Drawing.Size(186, 20);
@@ -113,10 +118,11 @@ namespace MegaDesk_Stratton
             // 
             // deskDepthInput
             // 
-            this.deskDepthInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deskDepthInput.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deskDepthInput.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.deskDepthInput.Location = new System.Drawing.Point(209, 101);
             this.deskDepthInput.Name = "deskDepthInput";
-            this.deskDepthInput.Size = new System.Drawing.Size(150, 26);
+            this.deskDepthInput.Size = new System.Drawing.Size(150, 29);
             this.deskDepthInput.TabIndex = 3;
             this.deskDepthInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.deskDepthInput_KeyDown);
             this.deskDepthInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.deskDepthInput_KeyPress);
@@ -124,7 +130,8 @@ namespace MegaDesk_Stratton
             // 
             // drawerCntLbl
             // 
-            this.drawerCntLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drawerCntLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drawerCntLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.drawerCntLbl.Location = new System.Drawing.Point(23, 152);
             this.drawerCntLbl.Name = "drawerCntLbl";
             this.drawerCntLbl.Size = new System.Drawing.Size(186, 20);
@@ -133,7 +140,8 @@ namespace MegaDesk_Stratton
             // 
             // drawersUpDown
             // 
-            this.drawersUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drawersUpDown.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drawersUpDown.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.drawersUpDown.Location = new System.Drawing.Point(209, 155);
             this.drawersUpDown.Maximum = new decimal(new int[] {
             7,
@@ -141,12 +149,13 @@ namespace MegaDesk_Stratton
             0,
             0});
             this.drawersUpDown.Name = "drawersUpDown";
-            this.drawersUpDown.Size = new System.Drawing.Size(150, 26);
+            this.drawersUpDown.Size = new System.Drawing.Size(150, 29);
             this.drawersUpDown.TabIndex = 4;
             // 
             // desktopMatLbl
             // 
-            this.desktopMatLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.desktopMatLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.desktopMatLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.desktopMatLbl.Location = new System.Drawing.Point(24, 200);
             this.desktopMatLbl.Name = "desktopMatLbl";
             this.desktopMatLbl.Size = new System.Drawing.Size(186, 20);
@@ -156,28 +165,20 @@ namespace MegaDesk_Stratton
             // desktopMatComboBox
             // 
             this.desktopMatComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.desktopMatComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.desktopMatComboBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.desktopMatComboBox.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.desktopMatComboBox.FormattingEnabled = true;
-            this.desktopMatComboBox.ItemHeight = 20;
-            ComboboxItem laminate = new ComboboxItem("Laminate", DesktopMaterial.Laminate);
-            ComboboxItem oak = new ComboboxItem("Oak", DesktopMaterial.Oak);
-            ComboboxItem rosewood = new ComboboxItem("Rosewood", DesktopMaterial.Rosewood);
-            ComboboxItem veneer = new ComboboxItem("Veneer", DesktopMaterial.Veneer);
-            ComboboxItem pine = new ComboboxItem("Pine", DesktopMaterial.Pine);
-            this.desktopMatComboBox.Items.Add(laminate);
-            this.desktopMatComboBox.Items.Add(oak);
-            this.desktopMatComboBox.Items.Add(rosewood);
-            this.desktopMatComboBox.Items.Add(veneer);
-            this.desktopMatComboBox.Items.Add(pine);
+            this.desktopMatComboBox.ItemHeight = 21;
             this.desktopMatComboBox.Location = new System.Drawing.Point(209, 198);
             this.desktopMatComboBox.Name = "desktopMatComboBox";
-            this.desktopMatComboBox.Size = new System.Drawing.Size(150, 28);
+            this.desktopMatComboBox.Size = new System.Drawing.Size(150, 29);
             this.desktopMatComboBox.TabIndex = 5;
             this.desktopMatComboBox.SelectionChangeCommitted += new System.EventHandler(this.desktopMatComboBox_SelectionChangeCommitted);
             // 
             // rushLbl
             // 
-            this.rushLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rushLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rushLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.rushLbl.Location = new System.Drawing.Point(24, 248);
             this.rushLbl.Name = "rushLbl";
             this.rushLbl.Size = new System.Drawing.Size(186, 20);
@@ -187,7 +188,8 @@ namespace MegaDesk_Stratton
             // rushComboBox
             // 
             this.rushComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.rushComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rushComboBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rushComboBox.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.rushComboBox.FormattingEnabled = true;
             this.rushComboBox.Items.AddRange(new object[] {
             "3",
@@ -195,7 +197,7 @@ namespace MegaDesk_Stratton
             "7"});
             this.rushComboBox.Location = new System.Drawing.Point(209, 247);
             this.rushComboBox.Name = "rushComboBox";
-            this.rushComboBox.Size = new System.Drawing.Size(150, 28);
+            this.rushComboBox.Size = new System.Drawing.Size(150, 29);
             this.rushComboBox.TabIndex = 6;
             this.rushComboBox.SelectionChangeCommitted += new System.EventHandler(this.rushComboBox_SelectionChangeCommitted);
             // 
@@ -205,7 +207,7 @@ namespace MegaDesk_Stratton
             this.submitQuoteBtn.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
             this.submitQuoteBtn.FlatAppearance.BorderSize = 2;
             this.submitQuoteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.submitQuoteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitQuoteBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitQuoteBtn.Location = new System.Drawing.Point(209, 316);
             this.submitQuoteBtn.Name = "submitQuoteBtn";
             this.submitQuoteBtn.Padding = new System.Windows.Forms.Padding(2);
@@ -217,7 +219,8 @@ namespace MegaDesk_Stratton
             // 
             // dateLbl
             // 
-            this.dateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLbl.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.dateLbl.Location = new System.Drawing.Point(21, 369);
             this.dateLbl.Name = "dateLbl";
             this.dateLbl.Padding = new System.Windows.Forms.Padding(2);
@@ -266,7 +269,6 @@ namespace MegaDesk_Stratton
             this.Name = "AddQuote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Quote";
-           
             ((System.ComponentModel.ISupportInitialize)(this.drawersUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
