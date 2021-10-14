@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MegaDesk_Stratton
+namespace MegaDesk_TeamGenesis
 {
     static class Program
     {

@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-namespace MegaDesk_Stratton
+namespace MegaDesk_TeamGenesis
 {
     public partial class SearchQuotes : Form
     {
@@ -49,7 +49,7 @@ namespace MegaDesk_Stratton
         /// </summary>
         /// <param name="material"></param>
 
-        private void FindQuotes(DesktopMaterial material)
+       private void FindQuotes(DesktopMaterial material)
         {
             try
             {
@@ -61,8 +61,8 @@ namespace MegaDesk_Stratton
                 searchGrid.RowHeadersVisible = false;
                 searchGrid.BackgroundColor = Color.AntiqueWhite;
                 searchGrid.GridColor = Color.AntiqueWhite;
-            }
-            catch (FileNotFoundException)
+            } 
+            catch(FileNotFoundException)
             {
                 MessageBox.Show("File Not Found");
             }
@@ -73,19 +73,18 @@ namespace MegaDesk_Stratton
         /// Defines the Predicate that will search for the selected Desktop Material
         /// </summary>
         /// <param name="dk"></param>
-
+       
         private static bool FindMaterial(DeskQuote dk)
         {
             if (dk.Desk.desktopMaterial == material)
             {
                 return true;
-            }
-            else
+            }else
             {
                 return false;
             }
         }
 
-
+        
     }
 }

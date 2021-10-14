@@ -2,7 +2,7 @@
 using System.IO;
 using System.Windows.Forms;
 
-namespace MegaDesk_Stratton
+namespace MegaDesk_TeamGenesis
 {/// <summary>
 /// DeskQuote class including constructors
 /// get; set;

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace MegaDesk_Stratton
+namespace MegaDesk_TeamGenesis
 {/// <summary>
 /// by Heather Stratton
 /// </summary>
@@ -63,6 +63,11 @@ namespace MegaDesk_Stratton
         private void exitBtn_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();//this.Close();
+        }
+
+        private void deskImageMenu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

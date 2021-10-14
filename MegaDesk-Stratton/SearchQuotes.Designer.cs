@@ -1,5 +1,4 @@
-﻿
-namespace MegaDesk_Stratton
+﻿namespace MegaDesk_TeamGenesis
 {
     partial class SearchQuotes
     {
@@ -30,6 +29,7 @@ namespace MegaDesk_Stratton
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.searchQuotesClose = new System.Windows.Forms.Button();
             this.searchLbl = new System.Windows.Forms.Label();
             this.searchMaterialsComboBox = new System.Windows.Forms.ComboBox();
@@ -39,9 +39,10 @@ namespace MegaDesk_Stratton
             // 
             // searchQuotesClose
             // 
-            this.searchQuotesClose.Location = new System.Drawing.Point(713, 415);
+            this.searchQuotesClose.Location = new System.Drawing.Point(1361, 914);
+            this.searchQuotesClose.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.searchQuotesClose.Name = "searchQuotesClose";
-            this.searchQuotesClose.Size = new System.Drawing.Size(75, 23);
+            this.searchQuotesClose.Size = new System.Drawing.Size(150, 53);
             this.searchQuotesClose.TabIndex = 0;
             this.searchQuotesClose.Text = "Close";
             this.searchQuotesClose.UseVisualStyleBackColor = true;
@@ -50,10 +51,12 @@ namespace MegaDesk_Stratton
             // searchLbl
             // 
             this.searchLbl.AutoSize = true;
-            this.searchLbl.Font = new System.Drawing.Font("Ink Free", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchLbl.Location = new System.Drawing.Point(228, 39);
+            this.searchLbl.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.searchLbl.Location = new System.Drawing.Point(456, 90);
+            this.searchLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.searchLbl.Name = "searchLbl";
-            this.searchLbl.Size = new System.Drawing.Size(194, 23);
+            this.searchLbl.Size = new System.Drawing.Size(267, 40);
             this.searchLbl.TabIndex = 1;
             this.searchLbl.Text = "Search By Material: ";
             this.searchLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -61,11 +64,13 @@ namespace MegaDesk_Stratton
             // searchMaterialsComboBox
             // 
             this.searchMaterialsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.searchMaterialsComboBox.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchMaterialsComboBox.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchMaterialsComboBox.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.searchMaterialsComboBox.FormattingEnabled = true;
-            this.searchMaterialsComboBox.Location = new System.Drawing.Point(452, 38);
+            this.searchMaterialsComboBox.Location = new System.Drawing.Point(904, 88);
+            this.searchMaterialsComboBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.searchMaterialsComboBox.Name = "searchMaterialsComboBox";
-            this.searchMaterialsComboBox.Size = new System.Drawing.Size(121, 28);
+            this.searchMaterialsComboBox.Size = new System.Drawing.Size(238, 48);
             this.searchMaterialsComboBox.TabIndex = 1;
             this.searchMaterialsComboBox.SelectedIndexChanged += new System.EventHandler(this.searchMaterialsComboBox_SelectedIndexChanged);
             // 
@@ -74,37 +79,51 @@ namespace MegaDesk_Stratton
             this.searchGrid.AllowUserToAddRows = false;
             this.searchGrid.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Ivory;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(1);
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.searchGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.searchGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.searchGrid.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.searchGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.searchGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.searchGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.searchGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.searchGrid.Location = new System.Drawing.Point(12, 106);
+            this.searchGrid.GridColor = System.Drawing.SystemColors.Control;
+            this.searchGrid.Location = new System.Drawing.Point(80, 245);
+            this.searchGrid.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.searchGrid.Name = "searchGrid";
-            this.searchGrid.RowHeadersVisible = false;
+            this.searchGrid.RowHeadersWidth = 82;
             this.searchGrid.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.searchGrid.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.searchGrid.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchGrid.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.searchGrid.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchGrid.RowTemplate.DefaultCellStyle.Format = "d";
             this.searchGrid.RowTemplate.DefaultCellStyle.NullValue = null;
             this.searchGrid.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(1);
             this.searchGrid.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.searchGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.searchGrid.Size = new System.Drawing.Size(776, 274);
+            this.searchGrid.Size = new System.Drawing.Size(1631, 632);
             this.searchGrid.TabIndex = 3;
             // 
             // SearchQuotes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MegaDesk_Stratton.Properties.Resources.woodgrain_texture_background;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1872, 1094);
             this.Controls.Add(this.searchGrid);
             this.Controls.Add(this.searchMaterialsComboBox);
             this.Controls.Add(this.searchLbl);
             this.Controls.Add(this.searchQuotesClose);
+            this.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SearchQuotes";

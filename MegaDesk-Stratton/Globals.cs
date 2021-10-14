@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MegaDesk_Stratton
+namespace MegaDesk_TeamGenesis
 {
     public class Globals
     {
