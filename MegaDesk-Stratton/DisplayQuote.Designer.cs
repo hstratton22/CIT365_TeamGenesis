@@ -82,37 +82,42 @@ namespace MegaDesk_Stratton
             // quoteForLbl
             // 
             this.quoteForLbl.AutoSize = true;
-            this.quoteForLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quoteForLbl.Location = new System.Drawing.Point(192, 31);
+            this.quoteForLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quoteForLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.quoteForLbl.Location = new System.Drawing.Point(195, 31);
             this.quoteForLbl.Name = "quoteForLbl";
-            this.quoteForLbl.Size = new System.Drawing.Size(80, 20);
+            this.quoteForLbl.Size = new System.Drawing.Size(81, 21);
             this.quoteForLbl.TabIndex = 1;
             this.quoteForLbl.Text = "Quote for ";
             // 
             // displayCustNameBox
             // 
             this.displayCustNameBox.AutoSize = true;
-            this.displayCustNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayCustNameBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayCustNameBox.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.displayCustNameBox.Location = new System.Drawing.Point(269, 31);
             this.displayCustNameBox.Name = "displayCustNameBox";
-            this.displayCustNameBox.Size = new System.Drawing.Size(119, 20);
+            this.displayCustNameBox.Size = new System.Drawing.Size(118, 21);
             this.displayCustNameBox.TabIndex = 2;
             this.displayCustNameBox.Text = "customer name";
             // 
             // displayQuoteDateBox
             // 
             this.displayQuoteDateBox.AutoSize = true;
-            this.displayQuoteDateBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteDateBox.Location = new System.Drawing.Point(195, 61);
+            this.displayQuoteDateBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDateBox.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteDateBox.Location = new System.Drawing.Point(253, 63);
             this.displayQuoteDateBox.Name = "displayQuoteDateBox";
-            this.displayQuoteDateBox.Size = new System.Drawing.Size(41, 20);
+            this.displayQuoteDateBox.Size = new System.Drawing.Size(34, 17);
             this.displayQuoteDateBox.TabIndex = 3;
             this.displayQuoteDateBox.Text = "date";
+            this.displayQuoteDateBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // displayQuoteWidthLbl
             // 
-            this.displayQuoteWidthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteWidthLbl.Location = new System.Drawing.Point(40, 124);
+            this.displayQuoteWidthLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteWidthLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteWidthLbl.Location = new System.Drawing.Point(50, 109);
             this.displayQuoteWidthLbl.Name = "displayQuoteWidthLbl";
             this.displayQuoteWidthLbl.Size = new System.Drawing.Size(100, 20);
             this.displayQuoteWidthLbl.TabIndex = 4;
@@ -120,8 +125,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteWidthBox
             // 
-            this.displayQuoteWidthBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteWidthBox.Location = new System.Drawing.Point(136, 123);
+            this.displayQuoteWidthBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteWidthBox.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteWidthBox.Location = new System.Drawing.Point(146, 108);
             this.displayQuoteWidthBox.Name = "displayQuoteWidthBox";
             this.displayQuoteWidthBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteWidthBox.TabIndex = 5;
@@ -130,8 +136,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteDepthLbl
             // 
-            this.displayQuoteDepthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteDepthLbl.Location = new System.Drawing.Point(40, 156);
+            this.displayQuoteDepthLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDepthLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteDepthLbl.Location = new System.Drawing.Point(50, 141);
             this.displayQuoteDepthLbl.Name = "displayQuoteDepthLbl";
             this.displayQuoteDepthLbl.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteDepthLbl.TabIndex = 6;
@@ -139,8 +146,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteDepthBox
             // 
-            this.displayQuoteDepthBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteDepthBox.Location = new System.Drawing.Point(136, 155);
+            this.displayQuoteDepthBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDepthBox.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteDepthBox.Location = new System.Drawing.Point(146, 140);
             this.displayQuoteDepthBox.Name = "displayQuoteDepthBox";
             this.displayQuoteDepthBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteDepthBox.TabIndex = 7;
@@ -149,7 +157,8 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteAreaLbl
             // 
-            this.displayQuoteAreaLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteAreaLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteAreaLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.displayQuoteAreaLbl.Location = new System.Drawing.Point(314, 185);
             this.displayQuoteAreaLbl.Name = "displayQuoteAreaLbl";
             this.displayQuoteAreaLbl.Size = new System.Drawing.Size(100, 23);
@@ -158,7 +167,8 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteAreaBox
             // 
-            this.displayQuoteAreaBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteAreaBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteAreaBox.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.displayQuoteAreaBox.Location = new System.Drawing.Point(436, 184);
             this.displayQuoteAreaBox.Name = "displayQuoteAreaBox";
             this.displayQuoteAreaBox.Size = new System.Drawing.Size(100, 23);
@@ -168,8 +178,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteAreaCostLbl
             // 
-            this.displayQuoteAreaCostLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteAreaCostLbl.Location = new System.Drawing.Point(314, 223);
+            this.displayQuoteAreaCostLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteAreaCostLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteAreaCostLbl.Location = new System.Drawing.Point(318, 231);
             this.displayQuoteAreaCostLbl.Name = "displayQuoteAreaCostLbl";
             this.displayQuoteAreaCostLbl.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteAreaCostLbl.TabIndex = 10;
@@ -177,8 +188,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteAreaCostBox
             // 
-            this.displayQuoteAreaCostBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteAreaCostBox.Location = new System.Drawing.Point(436, 223);
+            this.displayQuoteAreaCostBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteAreaCostBox.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteAreaCostBox.Location = new System.Drawing.Point(436, 230);
             this.displayQuoteAreaCostBox.Name = "displayQuoteAreaCostBox";
             this.displayQuoteAreaCostBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteAreaCostBox.TabIndex = 11;
@@ -187,8 +199,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteDrawerCountLbl
             // 
-            this.displayQuoteDrawerCountLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteDrawerCountLbl.Location = new System.Drawing.Point(40, 263);
+            this.displayQuoteDrawerCountLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDrawerCountLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteDrawerCountLbl.Location = new System.Drawing.Point(50, 254);
             this.displayQuoteDrawerCountLbl.Name = "displayQuoteDrawerCountLbl";
             this.displayQuoteDrawerCountLbl.Size = new System.Drawing.Size(121, 23);
             this.displayQuoteDrawerCountLbl.TabIndex = 12;
@@ -196,8 +209,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteDrawerCntBox
             // 
-            this.displayQuoteDrawerCntBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteDrawerCntBox.Location = new System.Drawing.Point(146, 262);
+            this.displayQuoteDrawerCntBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDrawerCntBox.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteDrawerCntBox.Location = new System.Drawing.Point(156, 253);
             this.displayQuoteDrawerCntBox.Name = "displayQuoteDrawerCntBox";
             this.displayQuoteDrawerCntBox.Size = new System.Drawing.Size(90, 23);
             this.displayQuoteDrawerCntBox.TabIndex = 13;
@@ -206,7 +220,8 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteDrawerCostLbl
             // 
-            this.displayQuoteDrawerCostLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDrawerCostLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDrawerCostLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.displayQuoteDrawerCostLbl.Location = new System.Drawing.Point(314, 296);
             this.displayQuoteDrawerCostLbl.Name = "displayQuoteDrawerCostLbl";
             this.displayQuoteDrawerCostLbl.Size = new System.Drawing.Size(106, 23);
@@ -215,7 +230,8 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteDrawerCostBox
             // 
-            this.displayQuoteDrawerCostBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDrawerCostBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteDrawerCostBox.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.displayQuoteDrawerCostBox.Location = new System.Drawing.Point(436, 295);
             this.displayQuoteDrawerCostBox.Name = "displayQuoteDrawerCostBox";
             this.displayQuoteDrawerCostBox.Size = new System.Drawing.Size(100, 23);
@@ -225,8 +241,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteMatLbl
             // 
-            this.displayQuoteMatLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteMatLbl.Location = new System.Drawing.Point(44, 340);
+            this.displayQuoteMatLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteMatLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteMatLbl.Location = new System.Drawing.Point(44, 332);
             this.displayQuoteMatLbl.Name = "displayQuoteMatLbl";
             this.displayQuoteMatLbl.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteMatLbl.TabIndex = 16;
@@ -234,8 +251,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteMatBox
             // 
-            this.displayQuoteMatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteMatBox.Location = new System.Drawing.Point(136, 339);
+            this.displayQuoteMatBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteMatBox.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteMatBox.Location = new System.Drawing.Point(136, 331);
             this.displayQuoteMatBox.Name = "displayQuoteMatBox";
             this.displayQuoteMatBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteMatBox.TabIndex = 17;
@@ -244,8 +262,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteMatCostLbl
             // 
-            this.displayQuoteMatCostLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteMatCostLbl.Location = new System.Drawing.Point(314, 369);
+            this.displayQuoteMatCostLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteMatCostLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteMatCostLbl.Location = new System.Drawing.Point(310, 374);
             this.displayQuoteMatCostLbl.Name = "displayQuoteMatCostLbl";
             this.displayQuoteMatCostLbl.Size = new System.Drawing.Size(119, 23);
             this.displayQuoteMatCostLbl.TabIndex = 18;
@@ -253,8 +272,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteMatCostBox
             // 
-            this.displayQuoteMatCostBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteMatCostBox.Location = new System.Drawing.Point(438, 369);
+            this.displayQuoteMatCostBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteMatCostBox.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteMatCostBox.Location = new System.Drawing.Point(436, 373);
             this.displayQuoteMatCostBox.Name = "displayQuoteMatCostBox";
             this.displayQuoteMatCostBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteMatCostBox.TabIndex = 19;
@@ -263,8 +283,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteRushLbl
             // 
-            this.displayQuoteRushLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteRushLbl.Location = new System.Drawing.Point(44, 413);
+            this.displayQuoteRushLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteRushLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteRushLbl.Location = new System.Drawing.Point(44, 404);
             this.displayQuoteRushLbl.Name = "displayQuoteRushLbl";
             this.displayQuoteRushLbl.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteRushLbl.TabIndex = 20;
@@ -272,8 +293,9 @@ namespace MegaDesk_Stratton
             // 
             // displayQuoteRushBox
             // 
-            this.displayQuoteRushBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteRushBox.Location = new System.Drawing.Point(171, 412);
+            this.displayQuoteRushBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteRushBox.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteRushBox.Location = new System.Drawing.Point(171, 403);
             this.displayQuoteRushBox.Name = "displayQuoteRushBox";
             this.displayQuoteRushBox.Size = new System.Drawing.Size(65, 24);
             this.displayQuoteRushBox.TabIndex = 21;
@@ -283,17 +305,19 @@ namespace MegaDesk_Stratton
             // displayQuoteRushCostLbl
             // 
             this.displayQuoteRushCostLbl.AutoSize = true;
-            this.displayQuoteRushCostLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteRushCostLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteRushCostLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.displayQuoteRushCostLbl.Location = new System.Drawing.Point(314, 451);
             this.displayQuoteRushCostLbl.Name = "displayQuoteRushCostLbl";
-            this.displayQuoteRushCostLbl.Size = new System.Drawing.Size(92, 20);
+            this.displayQuoteRushCostLbl.Size = new System.Drawing.Size(87, 21);
             this.displayQuoteRushCostLbl.TabIndex = 22;
             this.displayQuoteRushCostLbl.Text = "Rush Cost: ";
             // 
             // displayQuoteRushCostBox
             // 
-            this.displayQuoteRushCostBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.displayQuoteRushCostBox.Location = new System.Drawing.Point(436, 448);
+            this.displayQuoteRushCostBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayQuoteRushCostBox.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteRushCostBox.Location = new System.Drawing.Point(436, 451);
             this.displayQuoteRushCostBox.Name = "displayQuoteRushCostBox";
             this.displayQuoteRushCostBox.Size = new System.Drawing.Size(100, 23);
             this.displayQuoteRushCostBox.TabIndex = 23;
@@ -333,6 +357,7 @@ namespace MegaDesk_Stratton
             // displayQuoteHLine1
             // 
             this.displayQuoteHLine1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.displayQuoteHLine1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.displayQuoteHLine1.Location = new System.Drawing.Point(44, 176);
             this.displayQuoteHLine1.Name = "displayQuoteHLine1";
             this.displayQuoteHLine1.Size = new System.Drawing.Size(488, 2);
@@ -341,6 +366,7 @@ namespace MegaDesk_Stratton
             // displayQuoteHLine4
             // 
             this.displayQuoteHLine4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.displayQuoteHLine4.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.displayQuoteHLine4.Location = new System.Drawing.Point(48, 365);
             this.displayQuoteHLine4.Name = "displayQuoteHLine4";
             this.displayQuoteHLine4.Size = new System.Drawing.Size(488, 2);
@@ -349,6 +375,7 @@ namespace MegaDesk_Stratton
             // displayQuoteHLine3
             // 
             this.displayQuoteHLine3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.displayQuoteHLine3.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.displayQuoteHLine3.Location = new System.Drawing.Point(44, 286);
             this.displayQuoteHLine3.Name = "displayQuoteHLine3";
             this.displayQuoteHLine3.Size = new System.Drawing.Size(488, 2);
@@ -365,6 +392,7 @@ namespace MegaDesk_Stratton
             // displayQuoteHLine5
             // 
             this.displayQuoteHLine5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.displayQuoteHLine5.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.displayQuoteHLine5.Location = new System.Drawing.Point(48, 436);
             this.displayQuoteHLine5.Name = "displayQuoteHLine5";
             this.displayQuoteHLine5.Size = new System.Drawing.Size(488, 2);
@@ -373,7 +401,8 @@ namespace MegaDesk_Stratton
             // displayQuoteHLine2
             // 
             this.displayQuoteHLine2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.displayQuoteHLine2.Location = new System.Drawing.Point(314, 213);
+            this.displayQuoteHLine2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.displayQuoteHLine2.Location = new System.Drawing.Point(318, 218);
             this.displayQuoteHLine2.Name = "displayQuoteHLine2";
             this.displayQuoteHLine2.Size = new System.Drawing.Size(218, 2);
             this.displayQuoteHLine2.TabIndex = 32;
@@ -394,10 +423,11 @@ namespace MegaDesk_Stratton
             // dollar1
             // 
             this.dollar1.AutoSize = true;
-            this.dollar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dollar1.Location = new System.Drawing.Point(424, 223);
+            this.dollar1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dollar1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.dollar1.Location = new System.Drawing.Point(423, 231);
             this.dollar1.Name = "dollar1";
-            this.dollar1.Size = new System.Drawing.Size(18, 20);
+            this.dollar1.Size = new System.Drawing.Size(19, 21);
             this.dollar1.TabIndex = 34;
             this.dollar1.Text = "$";
             this.dollar1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -405,10 +435,11 @@ namespace MegaDesk_Stratton
             // dollar2
             // 
             this.dollar2.AutoSize = true;
-            this.dollar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dollar2.Location = new System.Drawing.Point(424, 295);
+            this.dollar2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dollar2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.dollar2.Location = new System.Drawing.Point(423, 295);
             this.dollar2.Name = "dollar2";
-            this.dollar2.Size = new System.Drawing.Size(18, 20);
+            this.dollar2.Size = new System.Drawing.Size(19, 21);
             this.dollar2.TabIndex = 35;
             this.dollar2.Text = "$";
             this.dollar2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -417,7 +448,8 @@ namespace MegaDesk_Stratton
             // 
             this.dollar3.AutoSize = true;
             this.dollar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dollar3.Location = new System.Drawing.Point(424, 369);
+            this.dollar3.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.dollar3.Location = new System.Drawing.Point(425, 375);
             this.dollar3.Name = "dollar3";
             this.dollar3.Size = new System.Drawing.Size(18, 20);
             this.dollar3.TabIndex = 36;
@@ -427,10 +459,11 @@ namespace MegaDesk_Stratton
             // dollar4
             // 
             this.dollar4.AutoSize = true;
-            this.dollar4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dollar4.Location = new System.Drawing.Point(424, 448);
+            this.dollar4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dollar4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.dollar4.Location = new System.Drawing.Point(424, 451);
             this.dollar4.Name = "dollar4";
-            this.dollar4.Size = new System.Drawing.Size(18, 20);
+            this.dollar4.Size = new System.Drawing.Size(19, 21);
             this.dollar4.TabIndex = 37;
             this.dollar4.Text = "$";
             this.dollar4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

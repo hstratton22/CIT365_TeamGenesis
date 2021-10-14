@@ -59,8 +59,6 @@ namespace MegaDesk_Stratton
                 searchGrid.DataSource = searchResults;
                 searchGrid.AutoResizeColumns();
                 searchGrid.RowHeadersVisible = false;
-                searchGrid.BackgroundColor = Color.AntiqueWhite;
-                searchGrid.GridColor = Color.AntiqueWhite;
             } 
             catch(FileNotFoundException)
             {

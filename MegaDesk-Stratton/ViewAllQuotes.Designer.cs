@@ -36,7 +36,7 @@ namespace MegaDesk_Stratton
             // 
             // allQuotesClose
             // 
-            this.allQuotesClose.Location = new System.Drawing.Point(531, 395);
+            this.allQuotesClose.Location = new System.Drawing.Point(531, 368);
             this.allQuotesClose.Name = "allQuotesClose";
             this.allQuotesClose.Size = new System.Drawing.Size(75, 23);
             this.allQuotesClose.TabIndex = 0;
@@ -46,22 +46,23 @@ namespace MegaDesk_Stratton
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(53, 64);
+            this.dataGridView1.Location = new System.Drawing.Point(66, 63);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(553, 256);
+            this.dataGridView1.Size = new System.Drawing.Size(540, 256);
             this.dataGridView1.TabIndex = 1;
             // 
             // ViewAllQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MegaDesk_Stratton.Properties.Resources.woodgrain_texture_background;
             this.ClientSize = new System.Drawing.Size(652, 430);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.allQuotesClose);
+            this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ViewAllQuotes";

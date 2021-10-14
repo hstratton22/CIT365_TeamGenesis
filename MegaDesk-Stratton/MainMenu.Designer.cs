@@ -41,13 +41,11 @@ namespace MegaDesk_Stratton
             // deskImageMenu
             // 
             this.deskImageMenu.BackColor = System.Drawing.SystemColors.Control;
-            this.deskImageMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.deskImageMenu.Image = ((System.Drawing.Image)(resources.GetObject("deskImageMenu.Image")));
-            this.deskImageMenu.Location = new System.Drawing.Point(574, 152);
-            this.deskImageMenu.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.deskImageMenu.Location = new System.Drawing.Point(239, 74);
             this.deskImageMenu.Name = "deskImageMenu";
-            this.deskImageMenu.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.deskImageMenu.Size = new System.Drawing.Size(342, 356);
+            this.deskImageMenu.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.deskImageMenu.Size = new System.Drawing.Size(218, 227);
             this.deskImageMenu.TabIndex = 4;
             this.deskImageMenu.TabStop = false;
             // 
@@ -56,10 +54,9 @@ namespace MegaDesk_Stratton
             this.addNewQuotesBtn.BackColor = System.Drawing.SystemColors.ControlLight;
             this.addNewQuotesBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNewQuotesBtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.addNewQuotesBtn.Location = new System.Drawing.Point(85, 101);
-            this.addNewQuotesBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.addNewQuotesBtn.Location = new System.Drawing.Point(53, 54);
             this.addNewQuotesBtn.Name = "addNewQuotesBtn";
-            this.addNewQuotesBtn.Size = new System.Drawing.Size(349, 96);
+            this.addNewQuotesBtn.Size = new System.Drawing.Size(154, 50);
             this.addNewQuotesBtn.TabIndex = 5;
             this.addNewQuotesBtn.Text = "&Add New Quote";
             this.addNewQuotesBtn.UseVisualStyleBackColor = false;
@@ -69,10 +66,9 @@ namespace MegaDesk_Stratton
             // 
             this.viewQuotesBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewQuotesBtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.viewQuotesBtn.Location = new System.Drawing.Point(85, 235);
-            this.viewQuotesBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.viewQuotesBtn.Location = new System.Drawing.Point(53, 123);
             this.viewQuotesBtn.Name = "viewQuotesBtn";
-            this.viewQuotesBtn.Size = new System.Drawing.Size(349, 96);
+            this.viewQuotesBtn.Size = new System.Drawing.Size(154, 50);
             this.viewQuotesBtn.TabIndex = 6;
             this.viewQuotesBtn.Text = "&View Quotes";
             this.viewQuotesBtn.UseVisualStyleBackColor = true;
@@ -82,10 +78,9 @@ namespace MegaDesk_Stratton
             // 
             this.searchQuotesBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchQuotesBtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.searchQuotesBtn.Location = new System.Drawing.Point(85, 374);
-            this.searchQuotesBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.searchQuotesBtn.Location = new System.Drawing.Point(53, 195);
             this.searchQuotesBtn.Name = "searchQuotesBtn";
-            this.searchQuotesBtn.Size = new System.Drawing.Size(349, 96);
+            this.searchQuotesBtn.Size = new System.Drawing.Size(154, 50);
             this.searchQuotesBtn.TabIndex = 7;
             this.searchQuotesBtn.Text = "&Search Quotes";
             this.searchQuotesBtn.UseVisualStyleBackColor = true;
@@ -95,10 +90,9 @@ namespace MegaDesk_Stratton
             // 
             this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitBtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.exitBtn.Location = new System.Drawing.Point(85, 518);
-            this.exitBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.exitBtn.Location = new System.Drawing.Point(53, 270);
             this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(349, 96);
+            this.exitBtn.Size = new System.Drawing.Size(154, 50);
             this.exitBtn.TabIndex = 8;
             this.exitBtn.Text = "E&xit";
             this.exitBtn.UseVisualStyleBackColor = true;
@@ -106,17 +100,16 @@ namespace MegaDesk_Stratton
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(968, 694);
+            this.ClientSize = new System.Drawing.Size(484, 361);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.searchQuotesBtn);
             this.Controls.Add(this.viewQuotesBtn);
             this.Controls.Add(this.addNewQuotesBtn);
             this.Controls.Add(this.deskImageMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainMenu";

@@ -39,7 +39,7 @@ namespace MegaDesk_Stratton
             // 
             // searchQuotesClose
             // 
-            this.searchQuotesClose.Location = new System.Drawing.Point(713, 415);
+            this.searchQuotesClose.Location = new System.Drawing.Point(687, 391);
             this.searchQuotesClose.Name = "searchQuotesClose";
             this.searchQuotesClose.Size = new System.Drawing.Size(75, 23);
             this.searchQuotesClose.TabIndex = 0;
@@ -50,10 +50,11 @@ namespace MegaDesk_Stratton
             // searchLbl
             // 
             this.searchLbl.AutoSize = true;
-            this.searchLbl.Font = new System.Drawing.Font("Ink Free", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.searchLbl.Location = new System.Drawing.Point(228, 39);
             this.searchLbl.Name = "searchLbl";
-            this.searchLbl.Size = new System.Drawing.Size(194, 23);
+            this.searchLbl.Size = new System.Drawing.Size(146, 21);
             this.searchLbl.TabIndex = 1;
             this.searchLbl.Text = "Search By Material: ";
             this.searchLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -61,11 +62,12 @@ namespace MegaDesk_Stratton
             // searchMaterialsComboBox
             // 
             this.searchMaterialsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.searchMaterialsComboBox.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchMaterialsComboBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchMaterialsComboBox.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.searchMaterialsComboBox.FormattingEnabled = true;
             this.searchMaterialsComboBox.Location = new System.Drawing.Point(452, 38);
             this.searchMaterialsComboBox.Name = "searchMaterialsComboBox";
-            this.searchMaterialsComboBox.Size = new System.Drawing.Size(121, 28);
+            this.searchMaterialsComboBox.Size = new System.Drawing.Size(121, 29);
             this.searchMaterialsComboBox.TabIndex = 1;
             this.searchMaterialsComboBox.SelectedIndexChanged += new System.EventHandler(this.searchMaterialsComboBox_SelectedIndexChanged);
             // 
@@ -79,9 +81,12 @@ namespace MegaDesk_Stratton
             dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(1);
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.searchGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.searchGrid.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.searchGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.searchGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.searchGrid.Location = new System.Drawing.Point(12, 106);
+            this.searchGrid.Location = new System.Drawing.Point(35, 96);
+            this.searchGrid.Margin = new System.Windows.Forms.Padding(6);
             this.searchGrid.Name = "searchGrid";
             this.searchGrid.RowHeadersVisible = false;
             this.searchGrid.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -92,14 +97,13 @@ namespace MegaDesk_Stratton
             this.searchGrid.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(1);
             this.searchGrid.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.searchGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.searchGrid.Size = new System.Drawing.Size(776, 274);
+            this.searchGrid.Size = new System.Drawing.Size(727, 274);
             this.searchGrid.TabIndex = 3;
             // 
             // SearchQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MegaDesk_Stratton.Properties.Resources.woodgrain_texture_background;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.searchGrid);
             this.Controls.Add(this.searchMaterialsComboBox);
