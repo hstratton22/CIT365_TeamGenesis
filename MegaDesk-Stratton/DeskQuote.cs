@@ -155,7 +155,7 @@ namespace MegaDesk_Stratton
                 }
 
             }
-            catch (Exception e)
+            catch (FileNotFoundException e)
             {
                 //change catch to something more appropriate
                 MessageBox.Show(@"File Could Not be Found" + e);
