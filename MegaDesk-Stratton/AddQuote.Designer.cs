@@ -179,6 +179,7 @@ namespace MegaDesk_Stratton
             this.desktopMatComboBox.Items.Add(rosewood);
             this.desktopMatComboBox.Items.Add(veneer);
             this.desktopMatComboBox.Items.Add(pine);
+
             this.desktopMatComboBox.Location = new System.Drawing.Point(209, 198);
             this.desktopMatComboBox.Name = "desktopMatComboBox";
             this.desktopMatComboBox.Size = new System.Drawing.Size(150, 29);
@@ -279,6 +280,7 @@ namespace MegaDesk_Stratton
             this.Name = "AddQuote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Quote";
+            
             ((System.ComponentModel.ISupportInitialize)(this.drawersUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
