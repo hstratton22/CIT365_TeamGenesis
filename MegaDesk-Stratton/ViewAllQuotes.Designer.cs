@@ -36,9 +36,10 @@ namespace MegaDesk_Stratton
             // 
             // allQuotesClose
             // 
-            this.allQuotesClose.Location = new System.Drawing.Point(531, 368);
+            this.allQuotesClose.Location = new System.Drawing.Point(708, 453);
+            this.allQuotesClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.allQuotesClose.Name = "allQuotesClose";
-            this.allQuotesClose.Size = new System.Drawing.Size(75, 23);
+            this.allQuotesClose.Size = new System.Drawing.Size(100, 28);
             this.allQuotesClose.TabIndex = 0;
             this.allQuotesClose.Text = "Close";
             this.allQuotesClose.UseVisualStyleBackColor = true;
@@ -51,19 +52,22 @@ namespace MegaDesk_Stratton
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(66, 63);
+            this.dataGridView1.Location = new System.Drawing.Point(88, 78);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(540, 256);
+            this.dataGridView1.Size = new System.Drawing.Size(720, 315);
             this.dataGridView1.TabIndex = 1;
             // 
             // ViewAllQuotes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(652, 430);
+            this.ClientSize = new System.Drawing.Size(869, 529);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.allQuotesClose);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ViewAllQuotes";
