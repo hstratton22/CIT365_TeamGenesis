@@ -18,12 +18,14 @@ namespace MegaDesk_Stratton
         private readonly Desk _newDesk = new Desk();
         private const string JsonAllQuotesFile = @"Data\quotes.json";
         private DateTime date = DateTime.Now;
+        private static DesktopMaterial material;
 
         public AddQuote()
         {
                                   
             InitializeComponent();
             dateTimer.Start();
+            desktopMatComboBox.DataSource = Enum.GetValues(typeof(DesktopMaterial));
         }
         
         /// <summary>
@@ -275,10 +277,11 @@ namespace MegaDesk_Stratton
         /// <param name="e"></param>
         private void desktopMatComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
-           
-            ComboboxItem materialSelectedItem = (ComboboxItem) this.desktopMatComboBox.SelectedItem;
-            DesktopMaterial material = (DesktopMaterial) materialSelectedItem.Value;
-            _newDesk.desktopMaterial = material;
+
+            //ComboboxItem materialSelectedItem = (ComboboxItem) this.desktopMatComboBox.SelectedItem;
+           // material = (DesktopMaterial)desktopMatComboBox.SelectedItem;
+            //DesktopMaterial material = (DesktopMaterial) materialSelectedItem.Value;
+           // _newDesk.desktopMaterial = material;
             
 
         }
@@ -310,7 +313,10 @@ namespace MegaDesk_Stratton
             dateLbl.Text = date.ToString("MMMM dd, yyyy");
         }
 
-        
+        private void desktopMatComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            material = (DesktopMaterial)desktopMatComboBox.SelectedItem;
+        }
     }
 
     

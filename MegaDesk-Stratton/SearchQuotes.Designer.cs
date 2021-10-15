@@ -38,9 +38,10 @@ namespace MegaDesk_Stratton
             // 
             // searchQuotesClose
             // 
-            this.searchQuotesClose.Location = new System.Drawing.Point(687, 391);
+            this.searchQuotesClose.Location = new System.Drawing.Point(793, 476);
+            this.searchQuotesClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchQuotesClose.Name = "searchQuotesClose";
-            this.searchQuotesClose.Size = new System.Drawing.Size(75, 23);
+            this.searchQuotesClose.Size = new System.Drawing.Size(100, 28);
             this.searchQuotesClose.TabIndex = 0;
             this.searchQuotesClose.Text = "Close";
             this.searchQuotesClose.UseVisualStyleBackColor = true;
@@ -51,7 +52,8 @@ namespace MegaDesk_Stratton
             this.searchLbl.AutoSize = true;
             this.searchLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchLbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.searchLbl.Location = new System.Drawing.Point(228, 39);
+            this.searchLbl.Location = new System.Drawing.Point(304, 48);
+            this.searchLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.searchLbl.Name = "searchLbl";
             this.searchLbl.Size = new System.Drawing.Size(146, 21);
             this.searchLbl.TabIndex = 1;
@@ -64,9 +66,10 @@ namespace MegaDesk_Stratton
             this.searchMaterialsComboBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchMaterialsComboBox.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.searchMaterialsComboBox.FormattingEnabled = true;
-            this.searchMaterialsComboBox.Location = new System.Drawing.Point(452, 38);
+            this.searchMaterialsComboBox.Location = new System.Drawing.Point(603, 46);
+            this.searchMaterialsComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchMaterialsComboBox.Name = "searchMaterialsComboBox";
-            this.searchMaterialsComboBox.Size = new System.Drawing.Size(121, 29);
+            this.searchMaterialsComboBox.Size = new System.Drawing.Size(160, 29);
             this.searchMaterialsComboBox.TabIndex = 1;
             this.searchMaterialsComboBox.SelectedIndexChanged += new System.EventHandler(this.searchMaterialsComboBox_SelectedIndexChanged);
             // 
@@ -77,20 +80,23 @@ namespace MegaDesk_Stratton
             this.searchGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.searchGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.searchGrid.Location = new System.Drawing.Point(130, 97);
+            this.searchGrid.Location = new System.Drawing.Point(173, 119);
+            this.searchGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchGrid.Name = "searchGrid";
-            this.searchGrid.Size = new System.Drawing.Size(540, 256);
+            this.searchGrid.Size = new System.Drawing.Size(720, 315);
             this.searchGrid.TabIndex = 2;
             // 
             // SearchQuotes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(968, 554);
             this.Controls.Add(this.searchGrid);
             this.Controls.Add(this.searchMaterialsComboBox);
             this.Controls.Add(this.searchLbl);
             this.Controls.Add(this.searchQuotesClose);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SearchQuotes";
